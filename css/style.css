@@ -1,4 +1,4 @@
-/* style.css */
+/* 🌐 General Page Styles */
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
@@ -7,7 +7,7 @@ body {
 
 /* 🔷 Banner with Background Image */
 .hero-banner {
-    background-image: url('../images/VIT-AP.jpg'); /* Corrected relative path */
+    background-image: url('../images/VIT-AP.jpg'); /* Make sure this path is correct */
     background-size: cover;
     background-position: center;
     color: white;
@@ -15,9 +15,33 @@ body {
     text-align: center;
 }
 
-.hero-banner h1 {
+/* ✨ Typewriter Animated Title */
+.animated-text {
+    overflow: hidden;
+    border-right: 2px solid white;
+    white-space: nowrap;
+    display: inline-block;
+    animation: typewriter 4s steps(30) 1s 1 normal both, blinkCursor 500ms steps(30) infinite;
     font-size: 3rem;
     margin: 0;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blinkCursor {
+    from {
+        border-right-color: white;
+    }
+    to {
+        border-right-color: transparent;
+    }
 }
 
 .hero-banner p {
@@ -25,7 +49,7 @@ body {
     margin-top: 10px;
 }
 
-/* 🔍 Search */
+/* 🔍 Search Section */
 .search-section {
     text-align: center;
     margin: 30px 0;
@@ -37,6 +61,7 @@ body {
     font-size: 16px;
     border-radius: 8px;
     border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 /* 👨‍🏫 Faculty Cards */
@@ -53,8 +78,13 @@ body {
     width: 220px;
     padding: 15px;
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: transform 0.3s;
+}
+
+.faculty-card:hover {
+    transform: translateY(-5px);
 }
 
 .faculty-card img {
@@ -71,4 +101,37 @@ body {
 .faculty-card p {
     font-size: 0.9rem;
     color: #555;
+}
+
+/* 🔗 Footer Navigation */
+.nav-footer {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+    font-weight: bold;
+}
+
+.nav-footer a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.nav-footer a:hover {
+    text-decoration: underline;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+    #searchBar {
+        width: 90%;
+    }
+
+    .faculty-card {
+        width: 80%;
+    }
+
+    .animated-text {
+        font-size: 2rem;
+    }
 }
