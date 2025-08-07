@@ -6,15 +6,18 @@ body {
     color: #333;
 }
 
-/* 🔷 Hero Banner */
+/* 🔷 Hero Banner with Background Image and Gradient Overlay */
 .hero-banner {
-    background: linear-gradient(135deg, #0077cc, #005fa3);
+    background: linear-gradient(
+        rgba(0, 119, 204, 0.6),
+        rgba(0, 95, 163, 0.6)
+    ),
+    url('../images/VIT-AP.jpg') center/cover no-repeat;
     color: white;
     text-align: center;
     padding: 60px 20px;
     position: relative;
 }
-
 .hero-banner h1 {
     font-size: 2.8rem;
     margin-bottom: 10px;
