@@ -7,7 +7,7 @@ body {
 
 /* 🔷 Banner with Background Image */
 .hero-banner {
-    background-image: url('../assets/banner.jpg'); /* Add your own image */
+    background-image: url('../images/VIT-AP.jpg'); /* Corrected relative path */
     background-size: cover;
     background-position: center;
     color: white;
