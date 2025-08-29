@@ -1,63 +1,58 @@
-// Sample faculty data (for testing)
-// Replace this with data loaded from JSON or backend later
-const facultyData = [
-    {
-        name: "Dr. A. Suresh",
-        department: "Computer Science",
-        cabin: "AB1-203",
-        image: "images/faculty/suresh.jpg"
-    },
-    {
-        name: "Dr. R. Meena",
-        department: "Mathematics",
-        cabin: "AB1-115",
-        image: "images/faculty/meena.jpg"
-    },
-    {
-        name: "Prof. N. Kishore",
-        department: "Electrical",
-        cabin: "AB2-310",
-        image: "images/faculty/kishore.jpg"
+document.addEventListener("DOMContentLoaded", () => {
+    const container = document.getElementById("facultyContainer");
+    const searchBar = document.getElementById("searchBar");
+    let facultyData = [];
+
+    // Load faculty.json
+    fetch("data/faculty.json")
+        .then(response => response.json())
+        .then(data => {
+            facultyData = data;
+            renderFacultyCards(facultyData);
+        })
+        .catch(error => {
+            console.error("Error loading faculty.json:", error);
+            container.innerHTML = "<p>⚠️ Could not load faculty data.</p>";
+        });
+
+    // Render all faculty cards
+    function renderFacultyCards(data) {
+        container.innerHTML = ""; // Clear previous
+
+        if (data.length === 0) {
+            container.innerHTML = "<p>No faculty found.</p>";
+            return;
+        }
+
+        data.forEach(faculty => {
+            const card = document.createElement("div");
+            card.className = "faculty-card";
+
+            card.innerHTML = `
+                <img src="${faculty.photoUrl}" alt="${faculty.name}" loading="lazy">
+                <h3>${faculty.name}</h3>
+                <p><strong>Designation:</strong> ${faculty.designation}</p>
+                <p><strong>School:</strong> ${faculty.school}</p>
+                <p><strong>Specialisation:</strong> ${faculty.specialisation}</p>
+                <p><strong>Email:</strong> <a href="mailto:${faculty.email}">${faculty.email}</a></p>
+                <p><strong>Cabin:</strong> ${faculty.cabin}</p>
+            `;
+
+            container.appendChild(card);
+        });
     }
-    // Add more entries here or load from external JSON
-];
 
-// Render all faculty cards
-function renderFacultyCards(data) {
-    const container = document.getElementById('facultyContainer');
-    container.innerHTML = ''; // Clear previous
+    // Filter function for search bar
+    searchBar.addEventListener("input", function () {
+        const query = this.value.toLowerCase();
 
-    if (data.length === 0) {
-        container.innerHTML = "<p>No faculty found.</p>";
-        return;
-    }
+        const filtered = facultyData.filter(faculty =>
+            faculty.name.toLowerCase().includes(query) ||
+            faculty.designation.toLowerCase().includes(query) ||
+            faculty.specialisation.toLowerCase().includes(query) ||
+            faculty.school.toLowerCase().includes(query)
+        );
 
-    data.forEach(faculty => {
-        const card = document.createElement('div');
-        card.className = 'faculty-card';
-
-        card.innerHTML = `
-            <img src="${faculty.image}" alt="${faculty.name}">
-            <h3>${faculty.name}</h3>
-            <p>${faculty.department}</p>
-            <p><strong>Cabin:</strong> ${faculty.cabin}</p>
-        `;
-
-        container.appendChild(card);
+        renderFacultyCards(filtered);
     });
-}
-
-// Filter function for search bar
-document.getElementById('searchBar').addEventListener('input', function () {
-    const query = this.value.toLowerCase();
-
-    const filtered = facultyData.filter(faculty =>
-        faculty.name.toLowerCase().includes(query) ||
-        faculty.department.toLowerCase().includes(query)
-    );
-
-    renderFacultyCards(filtered);
 });
-
-// Initial render
-renderFacultyCards(facultyData);
