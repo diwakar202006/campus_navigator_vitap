@@ -1,11 +1,16 @@
-document.addEventListener("DOMContentLoaded", () => {
+ddocument.addEventListener("DOMContentLoaded", () => {
     const container = document.getElementById("facultyContainer");
     const searchBar = document.getElementById("searchBar");
     let facultyData = [];
 
     // Load faculty.json
     fetch("data/faculty.json")
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Failed to load faculty.json");
+            }
+            return response.json();
+        })
         .then(data => {
             facultyData = data;
             renderFacultyCards(facultyData);
@@ -19,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function renderFacultyCards(data) {
         container.innerHTML = ""; // Clear previous
 
-        if (data.length === 0) {
+        if (!data || data.length === 0) {
             container.innerHTML = "<p>No faculty found.</p>";
             return;
         }
@@ -29,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
             card.className = "faculty-card";
 
             card.innerHTML = `
-                <img src="${faculty.photoUrl}" alt="${faculty.name}" loading="lazy">
+                <img src="${faculty.photoUrl}" alt="${faculty.name}" loading="lazy" onerror="this.src='fallback.png'">
                 <h3>${faculty.name}</h3>
                 <p><strong>Designation:</strong> ${faculty.designation}</p>
                 <p><strong>School:</strong> ${faculty.school}</p>
@@ -50,7 +55,9 @@ document.addEventListener("DOMContentLoaded", () => {
             faculty.name.toLowerCase().includes(query) ||
             faculty.designation.toLowerCase().includes(query) ||
             faculty.specialisation.toLowerCase().includes(query) ||
-            faculty.school.toLowerCase().includes(query)
+            faculty.school.toLowerCase().includes(query) ||
+            faculty.email.toLowerCase().includes(query) ||
+            faculty.cabin.toLowerCase().includes(query)
         );
 
         renderFacultyCards(filtered);
