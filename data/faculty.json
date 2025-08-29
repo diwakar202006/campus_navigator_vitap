@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Dr. Sudhakar Ilango",
+    "photoUrl": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_Sudhakar_Ilango_70087_IMG_4727_SCOPE_68f8caba72.avif",
+    "designation": "Dean, SCOPE, Professor Grade 1",
+    "school": "School of Computer Science and Engineering (SCOPE)",
+    "specialisation": "Artificial Intelligence, Machine Learning, Deep Learning, Operating Systems, Theory of Computation",
+    "email": "sudhakar.ilango@vitap.ac.in",
+    "cabin": "320, Central Block"
+  },
+  {
+    "name": "Dr. Lakshmi Priya",
+    "photoUrl": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_Lakshmi_Priya_SCOE_23f73a3e54.jpg",
+    "designation": "Associate Professor",
+    "school": "School of Electronics and Communication Engineering (SENSE)",
+    "specialisation": "VLSI Design, Embedded Systems, Signal Processing",
+    "email": "lakshmi.priya@vitap.ac.in",
+    "cabin": "210, Technology Block"
+  },
+  {
+    "name": "Dr. Ravi Kumar",
+    "photoUrl": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_Ravi_Kumar_SMECH_f9a21ef6d0.png",
+    "designation": "Assistant Professor",
+    "school": "School of Mechanical Engineering (SMEC)",
+    "specialisation": "Thermal Engineering, Fluid Mechanics, CAD/CAM",
+    "email": "ravi.kumar@vitap.ac.in",
+    "cabin": "115, Mechanical Block"
+  }
+]
