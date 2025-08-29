@@ -36,7 +36,7 @@
   <script>
     async function loadFaculty() {
       try {
-        const response = await fetch("faculty.json"); // load JSON file
+        const response = await fetch("data/faculty.json"); // load JSON file
         const data = await response.json();
 
         const container = document.getElementById("facultyContainer");
