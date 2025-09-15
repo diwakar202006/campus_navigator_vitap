@@ -1,10 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Faculty Directory - Campus Navigator</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Faculty Page Styling */
+    .faculty-container {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      padding: 20px;
+    }
+
+    .department-section {
+      margin-bottom: 40px;
+    }
+
+    .department-title {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #333;
+      padding-bottom: 5px;
+    }
+
+    .cards-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .faculty-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 15px;
+      width: 220px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transform: perspective(600px) rotateX(3deg) rotateY(3deg);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .faculty-card:hover {
+      transform: perspective(600px) rotateX(0deg) rotateY(0deg);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    }
+
+    .faculty-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .faculty-card h3 {
+      margin: 0 0 8px 0;
+    }
+
+    .faculty-card p {
+      margin: 4px 0;
+      font-size: 0.9em;
+    }
+
+    .search-section {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    #searchBar {
+      width: 80%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+
+    .department-filter {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .department-filter button {
+      background-color: #fff;
+      border: 2px solid #007BFF;
+      color: #007BFF;
+      padding: 8px 16px;
+      margin: 5px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .department-filter button:hover {
+      background-color: #007BFF;
+      color: #fff;
+    }
+
+    .department-filter button.active {
+      background-color: #007BFF;
+      color: #fff;
+    }
+
+    .nav-footer {
+      text-align: center;
+      padding: 15px;
+      background: #f8f8f8;
+      border-top: 1px solid #ddd;
+    }
+
+    .nav-footer a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .nav-footer a:hover {
+      color: #007BFF;
+    }
+  </style>
 </head>
 <body>
 
@@ -19,71 +133,30 @@
     <input type="text" id="searchBar" placeholder="Search faculty by name, school, or specialization...">
   </section>
 
+  <!-- 🗂 Department Filter Section -->
+  <section class="department-filter" id="departmentFilter">
+    <button data-dept="all" class="active">All Departments</button>
+    <button data-dept="Scope">Scope</button>
+    <button data-dept="Sense">Sense</button>
+    <button data-dept="Vish">Vish</button>
+    <button data-dept="SAS">SAS</button>
+    <button data-dept="Other">Other</button>
+  </section>
+
   <!-- 👨‍🏫 Faculty Cards -->
   <section class="faculty-container" id="facultyContainer">
-    <!-- Faculty cards will be inserted dynamically -->
+    <!-- Cards will be dynamically inserted -->
   </section>
 
   <!-- 🔗 Footer -->
   <footer class="nav-footer">
     <a href="index.html">Home</a>
     <a href="faculty.html">Faculty</a>
-    <a href="hostel.html">Hostel Reviews</a>
-    <a href="food.html">Food Street</a>
+    <a href="about.html">About</a>
   </footer>
 
-  <!-- 📜 JavaScript to Fetch Data -->
-  <script>
-    async function loadFaculty() {
-      try {
-        const response = await fetch("data/faculty.json"); // load JSON file
-        const data = await response.json();
-
-        const container = document.getElementById("facultyContainer");
-        const searchBar = document.getElementById("searchBar");
-
-        // Function to display faculty
-        function displayFaculty(faculties) {
-          container.innerHTML = "";
-          faculties.forEach(faculty => {
-            const card = document.createElement("div");
-            card.className = "faculty-card";
-
-            card.innerHTML = `
-              <img src="${faculty.photoUrl}" alt="${faculty.name}">
-              <h3>${faculty.name}</h3>
-              <p><strong>Designation:</strong> ${faculty.designation}</p>
-              <p><strong>School:</strong> ${faculty.school}</p>
-              <p><strong>Specialisation:</strong> ${faculty.specialisation}</p>
-              <p><strong>Email:</strong> <a href="mailto:${faculty.email}">${faculty.email}</a></p>
-              <p><strong>Cabin:</strong> ${faculty.cabin}</p>
-            `;
-
-            container.appendChild(card);
-          });
-        }
-
-        // Initial display
-        displayFaculty(data);
-
-        // Search filter
-        searchBar.addEventListener("input", (e) => {
-          const value = e.target.value.toLowerCase();
-          const filtered = data.filter(f =>
-            f.name.toLowerCase().includes(value) ||
-            f.school.toLowerCase().includes(value) ||
-            f.specialisation.toLowerCase().includes(value)
-          );
-          displayFaculty(filtered);
-        });
-
-      } catch (error) {
-        console.error("Error loading faculty data:", error);
-      }
-    }
-
-    loadFaculty();
-  </script>
+  <!-- 📜 JavaScript -->
+  <script src="js/faculty.js"></script>
 
 </body>
 </html>
