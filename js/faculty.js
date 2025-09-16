@@ -110,5 +110,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
         renderFacultyCards(filtered);
     }
+fetch("data/scope.json")
+  .then(response => {
+    console.log("Loaded scope.json:", response.ok);
+    return response.json();
+  })
+  .then(data => console.log(data))
+  .catch(err => console.error("Error loading scope.json:", err));
+
 
     // Handle
