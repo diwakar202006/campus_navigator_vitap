@@ -5,11 +5,27 @@ document.addEventListener("DOMContentLoaded", () => {
     let facultyData = [];
     let currentDepartment = "all";
 
+    // Extract department from school1 field, based on parentheses at the end
+    const getDepartment = (school1) => {
+        const match = school1.match(/\(([^)]+)\)$/); // Matches content inside last parentheses
+        if (match && match[1]) {
+            return match[1].toLowerCase(); // e.g., 'scope', 'sense', 'vish', 'sas'
+        }
+        return "other";
+    };
+
     async function loadFaculty() {
         try {
             const response = await fetch("data/faculty.json");
             if (!response.ok) throw new Error("Failed to load faculty.json");
-            facultyData = await response.json();
+            const data = await response.json();
+
+            // Enrich data by adding department extracted from school1
+            facultyData = data.map(faculty => ({
+                ...faculty,
+                department: getDepartment(faculty.school1)
+            }));
+
             renderFacultyCards(facultyData);
         } catch (error) {
             console.error("Error loading faculty.json:", error);
