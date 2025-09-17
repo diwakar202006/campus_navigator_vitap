@@ -3558,6 +3558,626 @@
     "email": "Email : kshama.p@vitap.ac.in",
     "cabin": "Office Address : 203 G, CB",
     "url": "https://vitap.ac.in/School%20of%20Law%20(VSL)/faculty/16.70537"
+  },
+  {
+    "name": "Dr. Priyanka Ghosh",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_Priyanka_Ghosh_VISH_1463_b08f244c8b.avif",
+    "school": "Dean In-Charge, VISH, Assistant Professor Senior Grade 2",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : Environmental Geography, Political Ecology, Biodiversity Conservation, Climate Change Adaptation, Tourism/Ecotourism",
+    "email": "Email : dean.vish@vitap.ac.in",
+    "cabin": "Office Address : 224, 2nd floor, AB-2",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/1.70342"
+  },
+  {
+    "name": "Dr. Mary Chandini Stephens",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_Mary_Chandini_Stephens_VISH_1566_517a2cb19d.avif",
+    "school": "Emeritus Professor",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : English literature, Indian Writing In English",
+    "email": "Email : marychandini.y@vit.ac.in",
+    "cabin": "Office Address : 202 F , AB2",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/5.70456"
+  },
+  {
+    "name": "Dr. Rafael Gonzalez Macho",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_Rafael_Gonzalez_Macho_1517_60d08f784a.avif",
+    "school": "Associate Professor Grade 1",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation :",
+    "email": "Email : rafael.gonzalez@vitap.ac.in",
+    "cabin": "Office Address : G24 I, AB-2",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/11.70521"
+  },
+  {
+    "name": "Dr. Satri Veera Kesalu",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_Satri_Veera_Kesalu_70679_IMG_2631_VISH_11378a9587.avif",
+    "school": "Associate Professor Grade 1",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : Public Policy, Indian government & Politics, Political Parties, Regional Politics, Human Rights, Democracy",
+    "email": "Email : veerakesalu.s@vitap.ac.in",
+    "cabin": "Office Address : 327-D, Central Block",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/11.70679"
+  },
+  {
+    "name": "Dr. Rasheda Parveen",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_Rasheda_Parveen_70062_IMG_2690_VISH_b7d9a53430.avif",
+    "school": "Assistant Professor Senior Grade 2",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : English in India, Cultural Studies, Religious Studies, Sexuality and Gender.",
+    "email": "Email : rasheda.p@vitap.ac.in",
+    "cabin": "Office Address : G24 C, AB-2",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/12.70062"
+  },
+  {
+    "name": "Dr. Tannistha Dasgupta",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_Tannistha_Dasgupta_abb3eb49a2.avif",
+    "school": "Assistant Professor Senior Grade 2",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : Language Assessment, Second Language Acquisition, Task-based Language Teaching, Technology-mediated Instruction",
+    "email": "Email : dasgupta.tannistha@vitap.ac.in",
+    "cabin": "Office Address : G 24 B, AB-2",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/12.70083"
+  },
+  {
+    "name": "Dr. Suresh Jagannadham",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/70358_Dr_Suresh_Jagannadham_VISH_1126_64848f2ff3.avif",
+    "school": "Assistant Professor Senior Grade 2",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : Contemporary / Modern Hindi Literature, Documentation of Tribal Oral Traditions, Arts, Language, Literature and Philosophy of Tribes, Socio,Cultural identity of De-notified, Nomadic and Semi -Nomadic Tribes in India.",
+    "email": "Email : suresh.jagannadham@vitap.ac.in",
+    "cabin": "Office Address : Faculty Area 1, Room 104, Cabin 107, AB 1",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/12.70358"
+  },
+  {
+    "name": "Dr. Sanziou Boro",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/70583_Dr_Sanziou_Boro_VISH_1356_2960f8813f.avif",
+    "school": "Assistant Professor Senior Grade 2",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : Translation Studies",
+    "email": "Email : sanziou.b@vitap.ac.in",
+    "cabin": "Office Address : CB- 201/G",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/12.70583"
+  },
+  {
+    "name": "Dr. Sudesh Manger",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_Sudesh_Manger_70109_IMG_4870_VISH_961c29a13c.avif",
+    "school": "Assistant Professor Senior Grade 1",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : Translation Studies, Nepali Literature, Post Colonial Literature, Dalit Muslim Literature",
+    "email": "Email : sudesh.manger@vitap.ac.in",
+    "cabin": "Office Address : G24 E, AB-2",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/13.70109"
+  },
+  {
+    "name": "Dr. Rakhi N K",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/70154_Dr_Rakhi_N_K_VISH_1267_5dd25a84ca.avif",
+    "school": "Assistant Professor Senior Grade 1",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : Linguistics, Corpus Linguistics, Syntax and Morphology",
+    "email": "Email : rakhi.nk@vitap.ac.in",
+    "cabin": "Office Address : 225 N, AB-2",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/13.70154"
+  },
+  {
+    "name": "Dr. Raghavi R. K.",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_Raghavi_R_K_VISH_1562_185cd2eb96.avif",
+    "school": "Assistant Professor Senior Grade 1",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : Graphic Medicine, Health Humanities, Comics Studies, Literature and Medicine and Visual Studies",
+    "email": "Email : raghavi.rk@vitap.ac.in",
+    "cabin": "Office Address : 202-A, AB-2",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/13.70194"
+  },
+  {
+    "name": "Dr. Deepjoy Katuwal",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_Deepjoy_Katuwal_VISH_1555_65f9d7216d.avif",
+    "school": "Assistant Professor Senior Grade 1",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : Eastern Himalayan Language & Culture, Indian English Literature, South Asian Studies, English Language Teaching",
+    "email": "Email : deepjoy.katuwal@vitap.ac.in",
+    "cabin": "Office Address : 202G, AB-2",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/13.70201"
+  },
+  {
+    "name": "Dr. Sanjit Chakraborty",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Sanjit_Chakraborty_VISH_6ae5ad9113.avif",
+    "school": "Assistant Professor Senior Grade 1",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : Philosophy of Science, Philosophy of Mathematics, AI and Ethics, Philosophy of Mind and Language",
+    "email": "Email : sanjit.chakraborty@vitap.ac.in",
+    "cabin": "Office Address : Faculty Area- 326/L, CB",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/13.70411"
+  },
+  {
+    "name": "Dr. Joseph Alugula",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_Joseph_Alugula_VISH_0945_65017dd59a.avif",
+    "school": "Assistant Professor Senior Grade 1",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : Political Theory, International Relations (Indo-Israel Relations), Public Policy, Ageing, Social Security",
+    "email": "Email : joseph.a@vitap.ac.in",
+    "cabin": "Office Address : 327-H CB",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/13.70511"
+  },
+  {
+    "name": "Dr. Debosmita Biswas",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_Debosmita_Biswas_VISH_1838_e1170e97ec.avif",
+    "school": "Assistant Professor Senior Grade 1",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : History of Ideas, Thanatology, Moral Philosophy",
+    "email": "Email : debosmita.b@vitap.ac.in",
+    "cabin": "Office Address : CB 418 B",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/13.70596"
+  },
+  {
+    "name": "Dr. Abdul Raffie Naik",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_Abdul_Raffie_Naik_VISH_1919_4c49162d3a.JPG",
+    "school": "Assistant Professor Senior Grade 1",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : Clinical, Counselling and Positive Psychology, Research, Intervention Studies",
+    "email": "Email : abdulraffie.naik@vitap.ac.in",
+    "cabin": "Office Address : 225 I, AB -2",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/13.70616"
+  },
+  {
+    "name": "Dr. Chandan Vishwas",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_Chandan_Vishwas_VISH_0760_2d7469fb16.avif",
+    "school": "Assistant Professor Grade 2",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : French Canadian language, literature and culture. French literature and culture",
+    "email": "Email : chandan.vishwas@vitap.ac.in",
+    "cabin": "Office Address : 307 B, AB-2",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/14.70189"
+  },
+  {
+    "name": "Dr. Ankita Swetaparna",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_Ankita_Swetaparna_IMG_4901_70353_VISH_ea15260390.avif",
+    "school": "Assistant Professor Grade 2",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : Discourse Analysis, Pragmatics, Phonetics, Sociolinguistics, Second Language Acquisition",
+    "email": "Email : ankita.swetaparna@vitap.ac.in",
+    "cabin": "Office Address : 325 C, AB-2",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/14.70353"
+  },
+  {
+    "name": "Dr. Balasingh V",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_Balasingh_V_VISH_1952_d4d316f546.JPG",
+    "school": "Assistant Professor Grade 2",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : Postcolonial literature, diaspora literature, british literature, literary theory and criticism.",
+    "email": "Email : balasingh.v@vitap.ac.in",
+    "cabin": "Office Address : G07 B, Mahathma Gandhi Central Block",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/14.70361"
+  },
+  {
+    "name": "Dr. Naveen Kumar Ch",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/70409_Dr_Naveen_Kumar_Ch_VISH_1378_283341ff47.avif",
+    "school": "Assistant Professor Grade 2",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : Science, Technology and Societal Studies",
+    "email": "Email : naveen.cherupelly@vitap.ac.in",
+    "cabin": "Office Address : CB - 115C",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/14.70409"
+  },
+  {
+    "name": "Dr. Anupama A. P.",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_Anupama_A_P_VISH_1447_11c0b036be.avif",
+    "school": "Assistant Professor Grade 2",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : Film Studies, Spectatorship Studies, Spatial studies in film, Semiotics, Cyberpunk",
+    "email": "Email : anupama.ap@vitap.ac.in",
+    "cabin": "Office Address : 203 D- CB",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/14.7043"
+  },
+  {
+    "name": "Dr. Ann Mary George",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_Ann_Mary_George_70463_0228_025ea5a483.avif",
+    "school": "Assitant Professor Grade 2",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : Film Studies, Star Studies, Malayalam Cinema, Popular Culture, and Ecocriticism",
+    "email": "Email : annmary.g@vitap.ac.in",
+    "cabin": "Office Address : 201-I CB",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/14.70463"
+  },
+  {
+    "name": "Dr. Aby Abraham",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/70464_Dr_Aby_Abraham_VISH_1368_9314a69153.avif",
+    "school": "Assistant Professor Grade 2",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : Visual Culture, Cultural Studies, Photography, Popular Culture, Literary Criticism",
+    "email": "Email : a.abraham@vitap.ac.in",
+    "cabin": "Office Address : 201-B CB",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/14.70464"
+  },
+  {
+    "name": "Dr. Amar Ramesh Wayal",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_Amar_Ramesh_Wayal_VISH_1439_0e3b2d11ee.avif",
+    "school": "Assistant Professor Grade 2",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : North American Native Studies, American Indian Rhetoric, First Nations cultural Politics, Comparative Literature, Translation Studies, Television Studies, Posthuman Studies, and Alternative Humanities",
+    "email": "Email : amar.w@vitap.ac.in",
+    "cabin": "Office Address : 201-D, Second Floor, CB",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/14.70491"
+  },
+  {
+    "name": "Dr. Linet Thomas",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/70578_Dr_Linet_Thomas_VISH_1353_47717e6656.avif",
+    "school": "Assistant Professor Grade 2",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : Comparative Literature, Malayalam Literatures in Translation, Gabriel GarcÃ­a MÃ¡rquez, Political Modernist Fictions of Kerala, Latin American Fictions",
+    "email": "Email : linet.thomas@vitap.ac.in",
+    "cabin": "Office Address : 224-H, AB-2",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/14.70578"
+  },
+  {
+    "name": "Dr. Deepanjan. K",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_Deepanjan_K_70582_IMG_4773_VISH_eca95adf73.avif",
+    "school": "Assistant Professor Grade 2",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : Intellectual History of Modern India",
+    "email": "Email : deepanjan.k@vitap.ac.in",
+    "cabin": "Office Address : 224B, Academic Block II",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/14.70582"
+  },
+  {
+    "name": "Dr. Suresh Garimella",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_Suresh_Garimella_VISH_1004_e645b57413.avif",
+    "school": "Assistant Professor Grade 2",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : Modern Indian History, Socio-Political History of Law",
+    "email": "Email : suresh.garimella@vitap.ac.in",
+    "cabin": "Office Address : 224 (I), AB II",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/14.70637"
+  },
+  {
+    "name": "Dr. Farooq Ahmad Mir",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_Farooq_Ahmad_Mir_VISH_1856_3304d8bc19.avif",
+    "school": "Assistant Professor Grade 2",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : Neuro-Cognitive Linguistics; English Language Teaching; Language Documentation; Sociolinguistics; Phonetics & Phonology (English and Languages in India); Linguistics Research methodology.",
+    "email": "Email : farooq.mir@vitap.ac.in",
+    "cabin": "Office Address : 224-C, AB-2",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/14.7067"
+  },
+  {
+    "name": "Dr. Pragya Sengupta",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_Pragya_Sengupta_70086_IMG_4882_VISH_aca9e4d604.avif",
+    "school": "Assistant Professor Grade 1",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : Translation Studies, Comparative Literature",
+    "email": "Email : sengupta.pragya@vitap.ac.in",
+    "cabin": "Office Address : 125H, AB-2",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/15.70086"
+  },
+  {
+    "name": "Dr. Arenkala Kichu",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/70212_Dr_Arenkala_Kichu_VISH_1138_43dfc818d7.avif",
+    "school": "Assistant Professor Grade 1",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation :",
+    "email": "Email : arenkala.k@vitap.ac.in",
+    "cabin": "Office Address : 225H, AB-2",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/15.70212"
+  },
+  {
+    "name": "Dr. Renuprasad Hemkiran Patki",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_Renuprasad_Hemkiran_Patki_70222_IMG_2546_VISH_8216c74ed8.avif",
+    "school": "Assistant Professor Grade 1",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : Modern German Poetry, Contemporary German Love Poetry, History of German Literature, German as a Foreign Language (DaF)",
+    "email": "Email : renuprasad.patki@vitap.ac.in",
+    "cabin": "Office Address : 325F, AB-2",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/15.70222"
+  },
+  {
+    "name": "Dr. Mahi S Thavarathu",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_Mahi_S_Thavarathu_IMG_6604_VISH_c5b37235d5.avif",
+    "school": "Assistant Professor Grade 1",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : Immigrant Narratives, Ecological Humanities, Contemporary Irish Literature",
+    "email": "Email : mahi.thavarathu@vitap.ac.in",
+    "cabin": "Office Address : GO7 E, CB",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/15.70368"
+  },
+  {
+    "name": "Dr. Anindita Shome",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_Anindita_Shome_VISH_1426_396ef2ad9c.avif",
+    "school": "Assistant Professor Grade 1",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : Diaspora studies, South Asian literatures, Migration studies",
+    "email": "Email : anindita.shome@vitap.ac.in",
+    "cabin": "Office Address : G-04, A, Central Block",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/15.7037"
+  },
+  {
+    "name": "Dr. Shubhra Ghoshal",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_Shubhra_Ghoshal_VISH_1543_cac9b5f421.avif",
+    "school": "Assistant Professor Grade 1",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : Theatre Studies, Critical Theories, Indian Literature",
+    "email": "Email : shubhra.ghoshal@vitap.ac.in",
+    "cabin": "Office Address : G 04, E, Central Block, VIT-AP",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/15.70376"
+  },
+  {
+    "name": "Dr. Neelima Adapa",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_Neelima_Adapa_IMG_9411_VISH_5341f03d0b.avif",
+    "school": "Assistant Professor Grade 1",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : Language Variation & Phonetic Analysis of Stuttering",
+    "email": "Email : neelima.adapa@vitap.ac.in",
+    "cabin": "Office Address : G04F, CB",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/15.70377"
+  },
+  {
+    "name": "Dr. Dheeraj Kumar",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/70379_Dr_Dheeraj_Kumar_VISH_1351_2bd99316d2.avif",
+    "school": "Assistant Professor Grade 1",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : French and Francophone Literature",
+    "email": "Email : dheeraj.kumar@vitap.ac.in",
+    "cabin": "Office Address : G-05, CB",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/15.70379"
+  },
+  {
+    "name": "Dr. Arpana Venu",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/70408_Dr_Arpana_Venu_VISH_1301_12f04334fc.avif",
+    "school": "Assistant Professor Grade 1",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : Travel Writing, South-Asian Travel Writing, Translation Studies, Queer Studies, Film Studies",
+    "email": "Email : arpana.venu@vitap.ac.in",
+    "cabin": "Office Address : Faculty room 103-B, CB",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/15.70408"
+  },
+  {
+    "name": "Dr. Nusrat Begum",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/27_Dr_Nusrat_Begum_VISH_ENG_70428_027e05a357.avif",
+    "school": "Assistant Professor Grade 1",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : Applied Linguistics, Linguistics Landscaping, Advertising Language, Language and Religion, Communicative English",
+    "email": "Email : nusrat.begum@vitap.ac.in",
+    "cabin": "Office Address : 201C - CB",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/15.70428"
+  },
+  {
+    "name": "Dr. Karishma Bisht",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_Karishma_Bisht_70490_IMG_2643_VISH_20e82a5f6a.avif",
+    "school": "Assistant Professor Grade 1",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : Literature and Psychology, Indian Aesthetics, Literary Theory, World Literature, Disablity Studies.",
+    "email": "Email : karishma.b@vitap.ac.in",
+    "cabin": "Office Address : 124I - AB-2",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/15.7049"
+  },
+  {
+    "name": "Dr. Aswathy M",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/ASWATHY_VISH_IMG_4709_01aaeea722.avif",
+    "school": "Assistant Professor Grade 1",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : Positive psychology, Character strengths, counselling, research",
+    "email": "Email : aswathy.m@vitap.ac.in",
+    "cabin": "Office Address : 201 G- Central Block",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/15.70553"
+  },
+  {
+    "name": "Dr. Neethu P Antony",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_Neethu_P_Antony_VISH_1471_221a3e41ae.avif",
+    "school": "Assistant Professor Grade 1",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : Indian Literature, Modern Indian Drama, Gender Studies, SubalternResistance Studies, Communication Studies",
+    "email": "Email : neethup.antony@vitap.ac.in",
+    "cabin": "Office Address : G04-G Central Block",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/15.70555"
+  },
+  {
+    "name": "Dr. Anjitha Gopi",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/70556_Dr_Anjitha_Gopi_VISH_1319_9848dcb8a2.avif",
+    "school": "Assistant Professor Grade 1",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : Native American Literature, Native American Ethnohistory, Tribalography, Spatial Study, Chronotopes",
+    "email": "Email : anjitha.g@vitap.ac.in",
+    "cabin": "Office Address : 327 E- Central Block",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/15.70556"
+  },
+  {
+    "name": "Dr. Amrita Purakayastha",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_Amrita_Purakayastha_70560_IMG_4862_VISH_4e546738b9.avif",
+    "school": "Assistant Professor Grade 1",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : Economics of Human Resources/ Health Economics",
+    "email": "Email : amrita.p@vitap.ac.in",
+    "cabin": "Office Address : 124-M, AB 2",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/15.7056"
+  },
+  {
+    "name": "Dr. Naveen Kumar Ranjan",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/41_Naveen_VISH_90e71b3639.avif",
+    "school": "Assistant Professor Grade 1",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : Foreign Language Learning and Teaching, Error Analysis, Psychology of Language Learning, Learning Strategies, ICT in Language Learning etc.",
+    "email": "Email : naveen.ranjan@vitap.ac.in",
+    "cabin": "Office Address : 202C, AB-2",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/15.70561"
+  },
+  {
+    "name": "Dr. Sunil Khosla",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_Sunil_Khosla_70565_IMG_4686_VISH_8d9dd99682.avif",
+    "school": "Assistant Professor Grade 1",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : Development Economics, Impact Evaluation, Forest Economics, Public Policy, Soil Health, Sustainable Development.",
+    "email": "Email : sunil.khosla@vitap.ac.in",
+    "cabin": "Office Address : 307-E, AB2",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/15.70565"
+  },
+  {
+    "name": "Dr. Ashraf Pulikkamath",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_Ashraf_Pulikkamath_VISH_1431_dffb24173a.avif",
+    "school": "Assistant Professor Grade 1",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : Gender Economics, Gender Budget, Fiscal Policy, Development Economics, Development Studies",
+    "email": "Email : ashraf.p@vitap.ac.in",
+    "cabin": "Office Address : 225-J, AB-2",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/15.70594"
+  },
+  {
+    "name": "Dr. Ritu Varghese",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_Ritu_Varghese_70597_IMG_4711_VISH_2f6255bfc7.avif",
+    "school": "Assistant Professor Grade 1",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : English Literature, Religion and Theology, Cultural Studies, Hindu Studies, Bhakti Literature, Modern Indian Historiography",
+    "email": "Email : ritu.v@vitap.ac.in",
+    "cabin": "Office Address : 418-C, Central Block",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/15.70597"
+  },
+  {
+    "name": "Dr. Tanmoy Das",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/70600_Dr_Tanmoy_Das_VISH_1247_2637fd6dda.avif",
+    "school": "Assistant Professor Grade 1",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : State, Governance and Development; State and Civil Society; Everyday state and Development; Peace and Conflict Studies; Political Anthropology; Political Sociology",
+    "email": "Email : tanmoy.das@vitap.ac.in",
+    "cabin": "Office Address : 224-E, AB-2",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/15.706"
+  },
+  {
+    "name": "Dr. Gaurav Sonik",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/70611_Dr_Gaurav_Sonik_VISH_1264_06547fa0fe.avif",
+    "school": "Assistant Professor Grade 1",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : German Literature, Indian Philosophy, German Reception of Ancient Indian Philosophy and texts, Literary Theories and Translation Theories",
+    "email": "Email : gaurav.sonik@vitap.ac.in",
+    "cabin": "Office Address : AB2-225F",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/15.70611"
+  },
+  {
+    "name": "Dr. Pragnya Parimita Chayani",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_Pragnya_Parimita_Chayani_70622_IMG_4705_vish_ce84c30258.avif",
+    "school": "Assistant Professor Grade 1",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : Energy Humanities, Gender and Anthropocene, Neo-Extractivism, Ecocriticism, Migration and Diaspora Studies",
+    "email": "Email : pragnyaparimita.ch@vitap.ac.in",
+    "cabin": "Office Address : 408A, CB",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/15.70622"
+  },
+  {
+    "name": "Dr. Jabeen Yasmeen",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_Jabeen_Yasmeen_70623_IMG_2607_VISH_ef01354dc0.avif",
+    "school": "Assistant Professor Grade 1",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : Trauma narratives, Oral Narratives, Literature on Citizenship and Identity, Partition Studies, Food and Trauma Narratives, Literature from Northeast India.",
+    "email": "Email : jabeen.yasmeen@vitap.ac.in",
+    "cabin": "Office Address : 408- C, CB",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/15.70623"
+  },
+  {
+    "name": "Dr. Soumik Sarkar",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_Soumik_Sarkar_VISH_1435_c7d309c549.avif",
+    "school": "Assistant Professor Grade 1",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : Macroeconomics, Development Economics, Globalization, Political Economy, History of Economic Ideas, International Trade",
+    "email": "Email : soumik.sarkar@vitap.ac.in",
+    "cabin": "Office Address :",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/15.70644"
+  },
+  {
+    "name": "Dr. Pema Choden Bhutia",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_Pema_Choden_Bhutia_VISH_0839_9833ae15d0.avif",
+    "school": "Assistant Professor Grade 1",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : Tourism, Ecotourism, Environmental Valuation Techniques, Environmental Economics and Gender Issues.",
+    "email": "Email : pemachoden.bhutia@vitap.ac.in",
+    "cabin": "Office Address : AB 2, 124 H",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/15.70654"
+  },
+  {
+    "name": "Dr. Vishnu V",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_Vishnu_V_70677_IMG_5207_SENSE_a0aa28b017.avif",
+    "school": "Assistant Professor Grade 1",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : Film Studies, Cultural Studies, Popular Culture, Genre Studies, Science Fiction",
+    "email": "Email : vishnu.v@vitap.ac.in",
+    "cabin": "Office Address : 408-B, Central Block",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/15.70677"
+  },
+  {
+    "name": "Dr. Anindita Roy",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_Anindita_Roy_70682_IMG_4947_VISH_27fbfcb694.avif",
+    "school": "Assistant Professor Grade 1",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation :",
+    "email": "Email : anindita.roy@vitap.ac.in",
+    "cabin": "Office Address : 201 C, CB Block",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/15.70682"
+  },
+  {
+    "name": "Dr. Ganesh M",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_Ganesh_M_70684_IMG_2686_VISH_5195b2b0cb.avif",
+    "school": "Assistant Professor Grade 1",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : Archaeological Anthropology, Prehistory and Heritage studies",
+    "email": "Email : ganesh.m@vitap.ac.in",
+    "cabin": "Office Address : 307 H, AB-2",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/15.70684"
+  },
+  {
+    "name": "Dr. K Kinjari",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_K_Kinjari_VISH_2353517394.avif",
+    "school": "Assistant Professor Grade 1",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation :",
+    "email": "Email : kinjari.k@vitap.ac.in",
+    "cabin": "Office Address :",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/15.7071"
+  },
+  {
+    "name": "Dr. Neha Kumari",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_Neha_Kumari_8c21290d12.avif",
+    "school": "Assistant Professor Grade 1",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation :",
+    "email": "Email : neha.kumari@vitap.ac.in",
+    "cabin": "Office Address :",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/15.70723"
+  },
+  {
+    "name": "Mr. Carlin Pouamou",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Mr_Carlin_Pouamou_VISH_1586_07886574d6.avif",
+    "school": "Assistant Professor (Junior)",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : FLE, ELE, Linguistics, Hispanic literature and culture",
+    "email": "Email : carlin.pouamou@vitap.ac.in",
+    "cabin": "Office Address : G24 A, AB-2",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/16.70095"
+  },
+  {
+    "name": "Ms. Kanaka Himabindu P.",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/7_Ms_Kanaka_Himabindu_Pottumuthu_VISH_HUM_70185_12306d44b0.avif",
+    "school": "Assistant Professor",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation : Social Anthropology, Medical Anthropology, Urban Studies, Sustainability and Smart Cities",
+    "email": "Email : kanaka.himabindu@vitap.ac.in",
+    "cabin": "Office Address : 224 J, AB-2",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/16.70185"
+  },
+  {
+    "name": "Ms. Srirupa Poddar",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Ms_Srirupa_Poddar_43bdc9fa5b.avif",
+    "school": "Assistant Professor",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation :",
+    "email": "Email : srirupa.p@vitap.ac.in",
+    "cabin": "Office Address :",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/16.70687"
+  },
+  {
+    "name": "Ms. Rini Singh",
+    "photo_url": "https://vitap-backend.s3.ap-south-1.amazonaws.com/Ms_Rini_Singh_VISH_IMG_2179_83fbdc7e91.avif",
+    "school": "Assistant Professor",
+    "school1": "School of Social Science and Humanities (VISH)",
+    "specialisation": "Specialisation :",
+    "email": "Email : rini.s@vitap.ac.in",
+    "cabin": "Office Address :",
+    "url": "https://vitap.ac.in/School%20of%20Social%20Science%20and%20Humanities%20(VISH)/faculty/16.70691"
   }
 
 
