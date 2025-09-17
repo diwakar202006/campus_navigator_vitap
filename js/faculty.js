@@ -9,9 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const getDepartment = (school1) => {
         const match = school1.match(/\(([^)]+)\)$/); // Matches content inside last parentheses
         if (match && match[1]) {
-            return match[1].toLowerCase(); // e.g., 'scope', 'sense', 'vish', 'sas'
+            return match[1].toLowerCase(); // e.g., 'scope', 'sense', 'vish', 'sas', 'smec', 'vsl'
         }
-        return "other";
+        return "unknown";
     };
 
     async function loadFaculty() {
