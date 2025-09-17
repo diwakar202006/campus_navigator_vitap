@@ -4,121 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Faculty Directory - Campus Navigator</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <style>
-    /* Faculty Page Styling */
-    .faculty-container {
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-      padding: 20px;
-    }
-
-    .department-section {
-      margin-bottom: 40px;
-    }
-
-    .department-title {
-      font-size: 1.8em;
-      margin-bottom: 20px;
-      border-bottom: 2px solid #333;
-      padding-bottom: 5px;
-    }
-
-    .cards-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
-    .faculty-card {
-      background: #fff;
-      border-radius: 12px;
-      padding: 15px;
-      width: 220px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      transform: perspective(600px) rotateX(3deg) rotateY(3deg);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .faculty-card:hover {
-      transform: perspective(600px) rotateX(0deg) rotateY(0deg);
-      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-    }
-
-    .faculty-card img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      margin-bottom: 10px;
-    }
-
-    .faculty-card h3 {
-      margin: 0 0 8px 0;
-    }
-
-    .faculty-card p {
-      margin: 4px 0;
-      font-size: 0.9em;
-    }
-
-    .search-section {
-      text-align: center;
-      margin: 20px 0;
-    }
-
-    #searchBar {
-      width: 80%;
-      padding: 10px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      font-size: 1em;
-    }
-
-    .department-filter {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    .department-filter button {
-      background-color: #fff;
-      border: 2px solid #007BFF;
-      color: #007BFF;
-      padding: 8px 16px;
-      margin: 5px;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background-color 0.3s, color 0.3s;
-    }
-
-    .department-filter button:hover {
-      background-color: #007BFF;
-      color: #fff;
-    }
-
-    .department-filter button.active {
-      background-color: #007BFF;
-      color: #fff;
-    }
-
-    .nav-footer {
-      text-align: center;
-      padding: 15px;
-      background: #f8f8f8;
-      border-top: 1px solid #ddd;
-    }
-
-    .nav-footer a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
-
-    .nav-footer a:hover {
-      color: #007BFF;
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
 
@@ -128,24 +14,22 @@
     <p>Find Faculty Cabins & Offices with Ease</p>
   </section>
 
-  <!-- 🔍 Search Section -->
+  <!-- 🔍 Search & Filter Section -->
   <section class="search-section">
-    <input type="text" id="searchBar" placeholder="Search faculty by name, school, or specialization...">
-  </section>
-
-  <!-- 🗂 Department Filter Section -->
-  <section class="department-filter" id="departmentFilter">
-    <button data-dept="all" class="active">All Departments</button>
-    <button data-dept="Scope">Scope</button>
-    <button data-dept="Sense">Sense</button>
-    <button data-dept="Vish">Vish</button>
-    <button data-dept="SAS">SAS</button>
-    <button data-dept="Other">Other</button>
+    <input type="text" id="searchBar" placeholder="Search by name, school, or specialization..."/>
+    <select id="departmentFilter">
+      <option value="all">All Departments</option>
+      <option value="scope">SCOPE</option>
+      <option value="sense">SENSE</option>
+      <option value="vish">VISH</option>
+      <option value="sas">SAS</option>
+      <option value="other">Other</option>
+    </select>
   </section>
 
   <!-- 👨‍🏫 Faculty Cards -->
   <section class="faculty-container" id="facultyContainer">
-    <!-- Cards will be dynamically inserted -->
+    <!-- Cards will be dynamically inserted here -->
   </section>
 
   <!-- 🔗 Footer -->

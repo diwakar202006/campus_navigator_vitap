@@ -1,4 +1,4 @@
-/* 🎨 General Styling */
+/* General Styling */
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -6,7 +6,7 @@ body {
     color: #333;
 }
 
-/* 🔷 Hero Banner with Background Image and Gradient Overlay */
+/* Hero Banner remains unchanged */
 .hero-banner {
     background: linear-gradient(
         rgba(0, 119, 204, 0.6),
@@ -16,151 +16,97 @@ body {
     color: white;
     text-align: center;
     padding: 60px 20px;
-    position: relative;
 }
 .hero-banner h1 {
     font-size: 2.8rem;
     margin-bottom: 10px;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid rgba(255,255,255,0.75);
-    width: 0;
-    animation: typing 3s steps(30, end) forwards, blink 0.75s step-end infinite;
 }
 .hero-banner p {
     font-size: 1.2rem;
     opacity: 0.9;
 }
-@keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
-}
-@keyframes blink {
-    50% { border-color: transparent; }
-}
 
-/* 🔍 Search Section */
+/* Search Section */
 .search-section {
-    padding: 30px 20px;
+    padding: 20px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
-#searchBar {
-    width: 60%;
-    padding: 12px 20px;
+#searchBar, #departmentFilter {
+    padding: 10px 15px;
     font-size: 1rem;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-/* 🗂 Department Filter Section */
-.department-filter {
-    text-align: center;
-    margin-bottom: 20px;
-}
-.department-filter button {
-    background-color: #fff;
-    border: 2px solid #007BFF;
-    color: #007BFF;
-    padding: 8px 16px;
-    margin: 5px;
     border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
 }
-.department-filter button:hover {
-    background-color: #007BFF;
-    color: #fff;
-    transform: scale(1.05);
-}
-.department-filter button.active {
-    background-color: #007BFF;
-    color: #fff;
+#searchBar:focus, #departmentFilter:focus {
+    border-color: #0077cc;
+    box-shadow: 0 0 5px rgba(0, 119, 204, 0.5);
 }
 
-/* 👨‍🏫 Faculty Card Container */
+/* Faculty Container */
 .faculty-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     padding: 30px;
 }
-.department-section {
-    width: 100%;
-}
-.department-title {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #333;
-    padding-bottom: 5px;
-}
-.cards-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-}
+
+/* Faculty Card Styles with 3D Animation */
 .faculty-card {
-    background: white;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transform: perspective(600px) rotateX(3deg) rotateY(3deg);
+    perspective: 1000px;
 }
-.faculty-card:hover {
-    transform: perspective(600px) rotateX(0deg) rotateY(0deg);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-}
-.faculty-card img {
+.card-inner {
+    position: relative;
     width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 15px;
+    height: 350px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
 }
-.faculty-card h3 {
-    margin: 0 0 10px 0;
-    font-size: 1.1rem;
+.faculty-card:hover .card-inner {
+    transform: rotateY(180deg);
 }
-.faculty-card p {
-    margin: 4px 0;
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.card-front {
+    background: white;
+    text-align: center;
+    padding: 20px;
+}
+.card-front img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card-front h3 {
+    margin: 15px 0 5px;
+}
+.card-front p {
+    color: #555;
+}
+.card-back {
+    background: #0077cc;
+    color: white;
+    transform: rotateY(180deg);
+    padding: 20px;
     font-size: 0.9rem;
 }
-
-/* 🏢 Office Cards Section (Optional styling kept for uniformity) */
-.offices-section {
-    padding: 40px 20px;
-    background-color: #ffffff;
-}
-.section-title {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 30px;
-    color: #333;
-    font-weight: 600;
-}
-.office-card {
-    background: #f9f9f9;
-    border-left: 6px solid #0077cc;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-    border-radius: 10px;
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeSlideIn 1s ease forwards;
-}
-.delay-1 { animation-delay: 0.3s; }
-.delay-2 { animation-delay: 0.6s; }
-.delay-3 { animation-delay: 0.9s; }
-@keyframes fadeSlideIn {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.card-back a {
+    color: #ffe;
+    text-decoration: underline;
 }
 
-/* 🔗 Footer Navigation */
+/* Footer */
 .nav-footer {
     text-align: center;
     padding: 20px;
