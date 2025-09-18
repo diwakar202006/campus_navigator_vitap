@@ -1,0 +1,471 @@
+[
+    {
+        "number": 1,
+        "roll": "21PHD7124",
+        "id": "50021",
+        "name": "SAMBI REDDY GOTTAM",
+        "cabin": "CB-118"
+    },
+    {
+        "number": 2,
+        "roll": "21PHD7131",
+        "id": "50145",
+        "name": "KOTESWARA RAO MAKKENA",
+        "cabin": "CB-120"
+    },
+    {
+        "number": 3,
+        "roll": "21PHD7158",
+        "id": "50045",
+        "name": "POTU BHARATH",
+        "cabin": "CB-120"
+    },
+    {
+        "number": 4,
+        "roll": "22PHD7007",
+        "id": "50047",
+        "name": "NADENLLA RAJAMOHANREDDY",
+        "cabin": "AB1-139"
+    },
+    {
+        "number": 5,
+        "roll": "22PHD7037",
+        "id": "50032",
+        "name": "RANJITH KUMAR BANALA",
+        "cabin": "AB1-325"
+    },
+    {
+        "number": 6,
+        "roll": "22PHD7043",
+        "id": "50050",
+        "name": "SRINIVASARAO GORAPALLI",
+        "cabin": "CB-119"
+    },
+    {
+        "number": 7,
+        "roll": "22PHD7094",
+        "id": "50136",
+        "name": "PADMAVATHI LAMBU",
+        "cabin": "CB-626"
+    },
+    {
+        "number": 8,
+        "roll": "22PHD7098",
+        "id": "50063",
+        "name": "TANIKELLA DIVYA NAGA PAVANI",
+        "cabin": "CB-626"
+    },
+    {
+        "number": 9,
+        "roll": "22PHD7117",
+        "id": "50060",
+        "name": "GOKAPAY DILIP KUMAR",
+        "cabin": "CB-119"
+    },
+    {
+        "number": 10,
+        "roll": "23PHD7023",
+        "id": "50006",
+        "name": "DHULIPALLA NAGAJYOTHI",
+        "cabin": "CB-629"
+    },
+    {
+        "number": 11,
+        "roll": "23PHD7025",
+        "id": "50067",
+        "name": "RAJASEKAR R",
+        "cabin": "CB-629"
+    },
+    {
+        "number": 12,
+        "roll": "23PHD7036",
+        "id": "50088",
+        "name": "SHAIK MAHABOOB BASHA",
+        "cabin": "CB-629"
+    },
+    {
+        "number": 13,
+        "roll": "23PHD7036",
+        "id": "50083",
+        "name": "S V KISHORE BABU",
+        "cabin": "CB-628"
+    },
+    {
+        "number": 14,
+        "roll": "23PHD7050",
+        "id": "50089",
+        "name": "SAMBA SIVA RAO GUMMA",
+        "cabin": "CB-628"
+    },
+    {
+        "number": 15,
+        "roll": "23PHD7095",
+        "id": "50090",
+        "name": "G.HARANANDHA BABU",
+        "cabin": "CB-629"
+    },
+    {
+        "number": 16,
+        "roll": "23PHD7100",
+        "id": "50092",
+        "name": "TADALAM NAGA RAJU",
+        "cabin": "CB-629"
+    },
+    {
+        "number": 17,
+        "roll": "23PHD7103",
+        "id": "50093",
+        "name": "PATAN MUSHIYA KATOON",
+        "cabin": "CB-626"
+    },
+    {
+        "number": 18,
+        "roll": "23PHD7104",
+        "id": "50095",
+        "name": "SHAIK KHASIM BASHA",
+        "cabin": "CB-626"
+    },
+    {
+        "number": 19,
+        "roll": "23PHD7105",
+        "id": "50094",
+        "name": "LAKSHMI PRASANNA MEDA",
+        "cabin": "CB-626"
+    },
+    {
+        "number": 20,
+        "roll": "23PHD7106",
+        "id": "50135",
+        "name": "BUDIDA SATISH KUMAR",
+        "cabin": "CB-626"
+    },
+    {
+        "number": 21,
+        "roll": "23PHD7110",
+        "id": "50096",
+        "name": "SUBBA RAO DUSARI",
+        "cabin": "CB-626"
+    },
+    {
+        "number": 22,
+        "roll": "23PHD7125",
+        "id": "50113",
+        "name": "BASARABOYINA YOHOSHIYA",
+        "cabin": "CB-628"
+    },
+    {
+        "number": 23,
+        "roll": "23PHD7126",
+        "id": "50147",
+        "name": "TANUKONDA PADMAJA",
+        "cabin": "CB-118"
+    },
+    {
+        "number": 24,
+        "roll": "23PHD7128",
+        "id": "50114",
+        "name": "PALADUGUTANUSHA",
+        "cabin": "CB-118"
+    },
+    {
+        "number": 25,
+        "roll": "23PHD7130",
+        "id": "50116",
+        "name": "MAHABOOBSUBHANI SHAIK CH",
+        "cabin": "CB-118"
+    },
+    {
+        "number": 26,
+        "roll": "23PHD7131",
+        "id": "50146",
+        "name": "JAGADEESH",
+        "cabin": "CB-118"
+    },
+    {
+        "number": 27,
+        "roll": "23PHD7138",
+        "id": "50117",
+        "name": "JAINABBI BANDA",
+        "cabin": "CB-119"
+    },
+    {
+        "number": 28,
+        "roll": "23PHD7139",
+        "id": "50110",
+        "name": "SHAIK SHAHANAZ",
+        "cabin": "CB-118"
+    },
+    {
+        "number": 29,
+        "roll": "23PHD7140",
+        "id": "50143",
+        "name": "SHARMILA SHAIK",
+        "cabin": "AB2-310"
+    },
+    {
+        "number": 30,
+        "roll": "24PHD7107",
+        "id": "50120",
+        "name": "INDURTHI SRIKANTH",
+        "cabin": "CB-221"
+    },
+    {
+        "number": 31,
+        "roll": "24PHD7109",
+        "id": "50112",
+        "name": "SANKURU RAVI PRAKASH",
+        "cabin": "CB-630"
+    },
+    {
+        "number": 32,
+        "roll": "24PHD7016",
+        "id": "50121",
+        "name": "YAMINI KODALI",
+        "cabin": "9346456619"
+    },
+    {
+        "number": 33,
+        "roll": "24PHD7017",
+        "id": "50122",
+        "name": "RUPPA PRASANNA KUMARI",
+        "cabin": "CB-630"
+    },
+    {
+        "number": 34,
+        "roll": "24PHD7044",
+        "id": "50167",
+        "name": "SHAIK RESHMA",
+        "cabin": "CB 118"
+    },
+    {
+        "number": 35,
+        "roll": "22PHD7045",
+        "id": "50149",
+        "name": "PARIMALA NALLAMOTU",
+        "cabin": "CB-119"
+    },
+    {
+        "number": 36,
+        "roll": "22PHD7105",
+        "id": "50150",
+        "name": "MADAPATI SRI LAKSHMI",
+        "cabin": "CB-626"
+    },
+    {
+        "number": 37,
+        "roll": "23PHD7003",
+        "id": "50151",
+        "name": "ODNALA SRINIVAS",
+        "cabin": "CB-629"
+    },
+    {
+        "number": 38,
+        "roll": "23PHD7003",
+        "id": "50152",
+        "name": "MUNIPALLI UMA MAHESWARA RAO",
+        "cabin": "CB-630"
+    },
+    {
+        "number": 39,
+        "roll": "24PHD7009",
+        "id": "50153",
+        "name": "PREM SWARUP MALLIPUDI",
+        "cabin": "CB-119"
+    },
+    {
+        "number": 40,
+        "roll": "24PHD7111",
+        "id": "50154",
+        "name": "KILLI DURGA BHAVANI",
+        "cabin": "CB-628"
+    },
+    {
+        "number": 41,
+        "roll": "24PHD7118",
+        "id": "50155",
+        "name": "GANDLA SOWMYA",
+        "cabin": "CB-118"
+    },
+    {
+        "number": 42,
+        "roll": "24PHD7125",
+        "id": "50156",
+        "name": "ANANTHA HARITHA",
+        "cabin": "CB-628"
+    },
+    {
+        "number": 43,
+        "roll": "24PHD7126",
+        "id": "50157",
+        "name": "RAMESH BABU KALATHOTI",
+        "cabin": "CB-628"
+    },
+    {
+        "number": 44,
+        "roll": "24PHD7128",
+        "id": "50158",
+        "name": "KARNA KRISHNAVENI",
+        "cabin": "CB-119"
+    },
+    {
+        "number": 45,
+        "roll": "24PHD7131",
+        "id": "50159",
+        "name": "SHAIK ASMEEN",
+        "cabin": "CB-628"
+    },
+    {
+        "number": 46,
+        "roll": "24PHD7133",
+        "id": "50160",
+        "name": "SHAIK NEELOFAR",
+        "cabin": "CB-119"
+    },
+    {
+        "number": 47,
+        "roll": "24PHD7137",
+        "id": "50161",
+        "name": "DASARI RAJIV KUMAR",
+        "cabin": "CB-629"
+    },
+    {
+        "number": 48,
+        "roll": "24PHD7142",
+        "id": "50162",
+        "name": "SHAIK SUFIA",
+        "cabin": "CB-630"
+    },
+    {
+        "number": 49,
+        "roll": "24PHD7145",
+        "id": "50163",
+        "name": "MOHAMMAD HAZI MOINUDDIN BASHA",
+        "cabin": "CB-628"
+    },
+    {
+        "number": 50,
+        "roll": "24PHD7154",
+        "id": "50164",
+        "name": "NAGA MALLESWARARAO P",
+        "cabin": "CB-628"
+    },
+    {
+        "number": 51,
+        "roll": "24PHD7238",
+        "id": "50165",
+        "name": "BESETTI VANITHA",
+        "cabin": "CB-118"
+    },
+    {
+        "number": 52,
+        "roll": "24PHD7260",
+        "id": "50166",
+        "name": "DHANIKONDA RATNA BHAVANI",
+        "cabin": "CB-210"
+    },
+    {
+        "number": 53,
+        "roll": "25PHD7001",
+        "id": "50168",
+        "name": "JYOTHSNA.K",
+        "cabin": "CB-118"
+    },
+    {
+        "number": 54,
+        "roll": "25PHD7010",
+        "id": "50170",
+        "name": "GORREMUCHU BEULAH RANI",
+        "cabin": "CB-118"
+    },
+    {
+        "number": 55,
+        "roll": "25PHD7020",
+        "id": "50171",
+        "name": "KANAKA DURGA",
+        "cabin": "6304127090"
+    },
+    {
+        "number": 56,
+        "roll": "25PHD7023",
+        "id": "50172",
+        "name": "VISHNUPRIYA BORRA",
+        "cabin": "CB-118"
+    },
+    {
+        "number": 57,
+        "roll": "25PHD7023",
+        "id": "50173",
+        "name": "NAGAEESWARI BODAPATI",
+        "cabin": "CB-626"
+    },
+    {
+        "number": 58,
+        "roll": "25PHD7041",
+        "id": "50174",
+        "name": "M JAGADEESH",
+        "cabin": "9703702978"
+    },
+    {
+        "number": 59,
+        "roll": "25PHD7026",
+        "id": "50175",
+        "name": "MUTTANGI CHANDRA SEKHAR",
+        "cabin": "CB-629"
+    },
+    {
+        "number": 60,
+        "roll": "25PHD7031",
+        "id": "50176",
+        "name": "P.ADI LAKSHMI",
+        "cabin": "CB-426"
+    },
+    {
+        "number": 61,
+        "roll": "25PHD7034",
+        "id": "50177",
+        "name": "POTHINA POORNACHANDU",
+        "cabin": "AB2-310"
+    },
+    {
+        "number": 62,
+        "roll": "25PHD7035",
+        "id": "50178",
+        "name": "PAMIDI PRAMEELA",
+        "cabin": "CB-120"
+    },
+    {
+        "number": 63,
+        "roll": "25PHD7037",
+        "id": "50179",
+        "name": "MANTRAVADI GAYATHRI",
+        "cabin": "CB-410"
+    },
+    {
+        "number": 64,
+        "roll": "25PHD7080",
+        "id": "50180",
+        "name": "SHAIK SHABINA",
+        "cabin": "CB-120"
+    },
+    {
+        "number": 65,
+        "roll": "24PHD7132",
+        "id": "50181",
+        "name": "JANGAM PAVANI PRAVALLIKA",
+        "cabin": "CB-630"
+    },
+    {
+        "number": 66,
+        "roll": "24PHD7014",
+        "id": "50122",
+        "name": "PRABINA KUMARI MISHRA",
+        "cabin": "CB-630"
+    },
+    {
+        "number": 67,
+        "roll": "23PHD7099",
+        "id": "50123",
+        "name": "BHABANI SANKAR SAMANTRAY",
+        "cabin": "CB-629"
+    }
+]
