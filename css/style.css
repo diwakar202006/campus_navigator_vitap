@@ -116,23 +116,44 @@ body {
 }
 .yellow-faculty-card {
     background: white;
-    border-radius: 10px;
+    border-radius: 12px;
     padding: 20px;
     text-align: center;
     font-weight: bold;
     color: #333;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-    transform: translateY(0);
-    transition: all 0.4s ease;
+    transform: translateY(0) scale(1);
+    transition: all 0.4s ease, box-shadow 0.4s ease;
     animation: floatIn 0.8s ease forwards;
+    position: relative;
+    overflow: hidden;
 }
+
+/* ✨ Animated glowing border effect */
+.yellow-faculty-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    padding: 2px;
+    background: linear-gradient(45deg, #0077cc, #00c6ff, #0077cc);
+    background-size: 200% 200%;
+    animation: borderGlow 3s linear infinite;
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
 .yellow-faculty-card:hover {
-    transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 12px 24px rgba(0, 119, 204, 0.3);
+    transform: translateY(-12px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 119, 204, 0.4);
 }
+
 .yellow-faculty-card h3 {
     margin: 10px 0;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #0077cc;
 }
 .yellow-faculty-card p {
@@ -148,6 +169,11 @@ body {
 @keyframes floatIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
+}
+@keyframes borderGlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 /* Footer */
