@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("faculty_yellow_tag.json")
+  fetch("js/faculty_yellow_tag.json")
     .then(response => response.json())
     .then(data => {
       const container = document.getElementById("yellow-faculty-container");
