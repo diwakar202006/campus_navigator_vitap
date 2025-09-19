@@ -1,4 +1,4 @@
-/* General Styling */
+/* ---------------- General Styling ---------------- */
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -6,7 +6,7 @@ body {
     color: #333;
 }
 
-/* Hero Banner remains unchanged */
+/* ---------------- Hero Banner ---------------- */
 .hero-banner {
     background: linear-gradient(
         rgba(0, 119, 204, 0.6),
@@ -26,7 +26,7 @@ body {
     opacity: 0.9;
 }
 
-/* Search Section */
+/* ---------------- Search Section ---------------- */
 .search-section {
     padding: 20px;
     text-align: center;
@@ -46,7 +46,7 @@ body {
     box-shadow: 0 0 5px rgba(0, 119, 204, 0.5);
 }
 
-/* Faculty Container */
+/* ---------------- Faculty Container ---------------- */
 .faculty-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -54,7 +54,7 @@ body {
     padding: 30px;
 }
 
-/* Faculty Card Styles with 3D Animation */
+/* ---------------- Faculty Card Styles with 3D Animation ---------------- */
 .faculty-card {
     perspective: 1000px;
 }
@@ -84,7 +84,7 @@ body {
 }
 .card-front img {
     width: 100%;
-    height: 150px;
+    height: 200px;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -106,14 +106,16 @@ body {
     text-decoration: underline;
 }
 
-/* 🔶 Yellow Tag Faculty Section */
+/* ---------------- 🔶 Yellow Tag Faculty Section ---------------- */
 .yellow-faculty-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
     gap: 20px;
     padding: 30px;
+    justify-items: center;
     animation: fadeIn 1s ease-in-out;
 }
+
 .yellow-faculty-card {
     background: white;
     border-radius: 12px;
@@ -129,7 +131,7 @@ body {
     overflow: hidden;
 }
 
-/* ✨ Animated glowing border effect */
+/* Animated glowing border */
 .yellow-faculty-card::before {
     content: "";
     position: absolute;
@@ -161,7 +163,24 @@ body {
     color: #555;
 }
 
-/* Animations */
+/* ---------------- Search Input ---------------- */
+#yellow-faculty-search {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 15px;
+    width: 90%;
+    max-width: 500px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+}
+#yellow-faculty-search:focus {
+    border-color: #0077cc;
+    box-shadow: 0 0 5px rgba(0, 119, 204, 0.5);
+}
+
+/* ---------------- Animations ---------------- */
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -176,18 +195,45 @@ body {
     100% { background-position: 0% 50%; }
 }
 
-/* Footer */
+/* ---------------- Footer ---------------- */
 .nav-footer {
     text-align: center;
     padding: 20px;
     background: #ddd;
     font-weight: bold;
 }
+
+/* Sub-navigation in footer */
+.nav-footer .sub-nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 10px;
+}
+
 .nav-footer a {
     color: #333;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 10px;
 }
 .nav-footer a:hover {
     text-decoration: underline;
+}
+
+/* Footer contact icons */
+.footer-contact {
+    margin-top: 10px;
+}
+.footer-contact a {
+    margin: 0 15px;
+    display: inline-block;
+}
+.footer-contact img {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    transition: transform 0.3s;
+}
+.footer-contact img:hover {
+    transform: scale(1.2);
 }
