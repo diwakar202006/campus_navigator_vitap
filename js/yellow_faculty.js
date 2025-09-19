@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       data.forEach((faculty, index) => {
         const card = document.createElement("div");
-        card.classList.add("faculty-card");
+        card.classList.add("yellow-faculty-card");
 
         // Add delay so each card animates one after another
         card.style.animationDelay = `${index * 0.2}s`;
