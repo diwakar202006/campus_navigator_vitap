@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       data.forEach(faculty => {
         const card = document.createElement("div");
-        card.classList.add("faculty-card");
+        card.classList.add("yellow-faculty-card");
 
         card.innerHTML = `
           <h3>${faculty.name}</h3>
