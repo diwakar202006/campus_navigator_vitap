@@ -20,9 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
       card.classList.add("yellow-faculty-card");
       card.style.animationDelay = `${index * 0.2}s`;
 
-      // Fixed height for all cards
-      card.style.height = "180px";
-
       card.innerHTML = `
         <h3>${highlightText(faculty.name, searchTerm)}</h3>
         <p><strong>Roll:</strong> ${faculty.roll}</p>
