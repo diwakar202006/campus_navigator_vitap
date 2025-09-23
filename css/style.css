@@ -144,7 +144,7 @@ canvas#particles {
     overflow: hidden;
 
     /* 🔹 Fixed height */
-    height: 180px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
