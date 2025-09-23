@@ -2,8 +2,20 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #f0f2f5;
-    color: #333;
+    background: #0f0f1a; /* 🔄 Dark theme */
+    color: #f5f5f5;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Particle Background Layer */
+canvas#particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
 /* ---------------- Hero Banner ---------------- */
@@ -42,8 +54,8 @@ body {
     transition: all 0.3s ease;
 }
 #searchBar:focus, #departmentFilter:focus {
-    border-color: #0077cc;
-    box-shadow: 0 0 5px rgba(0, 119, 204, 0.5);
+    border-color: #00c6ff;
+    box-shadow: 0 0 8px rgba(0, 198, 255, 0.7);
 }
 
 /* ---------------- Faculty Container ---------------- */
@@ -75,12 +87,13 @@ body {
     backface-visibility: hidden;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 .card-front {
-    background: white;
+    background: #1a1a2e;
     text-align: center;
     padding: 20px;
+    color: #fff;
 }
 .card-front img {
     width: 100%;
@@ -90,9 +103,10 @@ body {
 }
 .card-front h3 {
     margin: 15px 0 5px;
+    color: #00c6ff;
 }
 .card-front p {
-    color: #555;
+    color: #ccc;
 }
 .card-back {
     background: #0077cc;
@@ -109,29 +123,26 @@ body {
 /* ---------------- 🔶 Yellow Tag Faculty Section ---------------- */
 .yellow-faculty-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 30px;
     justify-items: center;
     animation: fadeIn 1s ease-in-out;
 }
-
 .yellow-faculty-card {
-    background: white;
+    background: #1a1a2e;
     border-radius: 12px;
     padding: 20px;
     text-align: center;
     font-weight: bold;
-    color: #333;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    color: #f5f5f5;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
     transform: translateY(0) scale(1);
     transition: all 0.4s ease, box-shadow 0.4s ease;
     animation: floatIn 0.8s ease forwards;
     position: relative;
     overflow: hidden;
 }
-
-/* Animated glowing border */
 .yellow-faculty-card::before {
     content: "";
     position: absolute;
@@ -147,20 +158,18 @@ body {
     -webkit-mask-composite: xor;
     mask-composite: exclude;
 }
-
 .yellow-faculty-card:hover {
     transform: translateY(-12px) scale(1.05);
-    box-shadow: 0 15px 30px rgba(0, 119, 204, 0.4);
+    box-shadow: 0 15px 30px rgba(0, 198, 255, 0.6);
 }
-
 .yellow-faculty-card h3 {
     margin: 10px 0;
     font-size: 1.3rem;
-    color: #0077cc;
+    color: #00c6ff;
 }
 .yellow-faculty-card p {
     font-size: 0.95rem;
-    color: #555;
+    color: #ccc;
 }
 
 /* ---------------- Search Input ---------------- */
@@ -176,8 +185,8 @@ body {
     transition: all 0.3s ease;
 }
 #yellow-faculty-search:focus {
-    border-color: #0077cc;
-    box-shadow: 0 0 5px rgba(0, 119, 204, 0.5);
+    border-color: #00c6ff;
+    box-shadow: 0 0 5px rgba(0, 198, 255, 0.7);
 }
 
 /* ---------------- Animations ---------------- */
@@ -199,28 +208,24 @@ body {
 .nav-footer {
     text-align: center;
     padding: 20px;
-    background: #ddd;
+    background: #1a1a2e;
     font-weight: bold;
+    color: #ccc;
 }
-
-/* Sub-navigation in footer */
 .nav-footer .sub-nav {
     display: flex;
     justify-content: center;
     gap: 30px;
     margin-bottom: 10px;
 }
-
 .nav-footer a {
-    color: #333;
+    color: #00c6ff;
     text-decoration: none;
     margin: 0 10px;
 }
 .nav-footer a:hover {
     text-decoration: underline;
 }
-
-/* Footer contact icons */
 .footer-contact {
     margin-top: 10px;
 }
