@@ -4,57 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Campus Navigator - Offices</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: white;
+      font-family: 'Segoe UI', sans-serif;
       background: #0f0f1a;
+      color: white;
       overflow-x: hidden;
     }
 
-    /* 🔵 Particle Background */
-    canvas {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-    }
-
-    /* 🔵 Hero Banner */
+    /* ✅ Hero Banner */
     header.hero-banner {
-      background: rgba(0, 0, 0, 0.6);
-      padding: 2rem;
-      text-align: center;
-    }
-    header.hero-banner h1 {
-      font-size: 2.5rem;
-      margin: 0;
-      text-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
-    }
-
-    /* 🔵 Navigation */
-    nav {
+      background: url('../images/VIT-AP.jpg') no-repeat center center/cover;
+      height: 250px;
       display: flex;
       justify-content: center;
-      gap: 20px;
-      background: rgba(255, 255, 255, 0.05);
-      padding: 1rem;
-      backdrop-filter: blur(5px);
-    }
-    nav a {
-      color: cyan;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: white;
+      align-items: center;
+      text-align: center;
+      position: relative;
     }
 
-    /* 🔵 Offices Grid */
+    header.hero-banner::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6);
+    }
+
+    header.hero-banner h1 {
+      position: relative;
+      font-size: 2.5rem;
+      color: cyan;
+      text-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
+      z-index: 1;
+    }
+
+    /* ✅ Offices Grid */
     .office-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -62,18 +50,21 @@
       padding: 2rem;
     }
 
-    /* 🔵 Flip Card Effect */
-    .office-card {
+    /* ✅ Flip Card */
+    .card {
       perspective: 1000px;
     }
+
     .card-inner {
       position: relative;
       width: 100%;
-      height: 300px;
-      transform-style: preserve-3d;
+      height: 200px;
+      text-align: center;
       transition: transform 0.8s;
+      transform-style: preserve-3d;
     }
-    .office-card:hover .card-inner {
+
+    .card:hover .card-inner {
       transform: rotateY(180deg);
     }
 
@@ -81,141 +72,174 @@
       position: absolute;
       width: 100%;
       height: 100%;
-      border-radius: 12px;
       backface-visibility: hidden;
-      overflow: hidden;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
-    }
-
-    /* Front */
-    .card-front {
-      background: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
-      text-align: center;
-      padding: 1.5rem;
+      font-size: 1.2rem;
+      padding: 1rem;
+      box-shadow: 0 4px 20px rgba(0,255,255,0.4);
     }
-    .card-front h3 {
-      margin: 0;
+
+    .card-front {
+      background: rgba(255, 255, 255, 0.08);
       color: cyan;
     }
 
-    /* Back */
     .card-back {
       background: rgba(0, 255, 255, 0.1);
+      color: white;
       transform: rotateY(180deg);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 1rem;
-      text-align: center;
     }
-    .card-back p {
-      margin: 5px 0;
-      font-size: 0.95rem;
-      color: #eee;
+
+    /* ✅ Footer */
+    footer {
+      background: rgba(0, 0, 0, 0.8);
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+      color: #ccc;
+    }
+
+    footer .social-icons a {
+      color: cyan;
+      margin: 0 10px;
+      font-size: 1.5rem;
+      transition: color 0.3s;
+    }
+
+    footer .social-icons a:hover {
+      color: white;
     }
   </style>
 </head>
 <body>
-  <!-- Particle Background -->
-  <canvas id="particles"></canvas>
 
-  <!-- Hero Banner -->
+  <!-- ✅ Hero Banner -->
   <header class="hero-banner">
-    <h1>Campus Navigator - Offices</h1>
+    <h1>Campus Offices</h1>
   </header>
 
-  <!-- Navigation -->
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="faculty_cabins.html">Faculty Cabins</a>
-    <a href="yellow_faculty.html">Yellow Tag Faculty</a>
-    <a href="about.html">About</a>
-  </nav>
-
-  <!-- Office Cards -->
+  <!-- ✅ Offices Flip Cards -->
   <main>
     <section class="office-grid">
-      <div class="office-card">
+      <div class="card">
         <div class="card-inner">
-          <div class="card-front">
-            <h3>Admissions Office</h3>
-          </div>
-          <div class="card-back">
-            <p><strong>Location:</strong> Block A, Room 101</p>
-            <p><strong>Contact:</strong> admissions@vitap.ac.in</p>
-          </div>
+          <div class="card-front">Library</div>
+          <div class="card-back">AB-1, 2nd Floor</div>
         </div>
       </div>
-      <div class="office-card">
+
+      <div class="card">
         <div class="card-inner">
-          <div class="card-front">
-            <h3>Finance Office</h3>
-          </div>
-          <div class="card-back">
-            <p><strong>Location:</strong> Block B, Room 202</p>
-            <p><strong>Contact:</strong> finance@vitap.ac.in</p>
-          </div>
+          <div class="card-front">SCOPE Dean</div>
+          <div class="card-back">CB, 3rd Floor</div>
         </div>
       </div>
-      <div class="office-card">
+
+      <div class="card">
         <div class="card-inner">
-          <div class="card-front">
-            <h3>Examination Office</h3>
-          </div>
-          <div class="card-back">
-            <p><strong>Location:</strong> Block D, Room 305</p>
-            <p><strong>Contact:</strong> exams@vitap.ac.in</p>
-          </div>
+          <div class="card-front">Dean Academics</div>
+          <div class="card-back">AB-1, G-36</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">COE Office</div>
+          <div class="card-back">AB-1, 229</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">Engineering Clinics</div>
+          <div class="card-back">CB, 210</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">IIEC Office</div>
+          <div class="card-back">CB, 206</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">CDC</div>
+          <div class="card-back">CB, 312</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">Physical Education</div>
+          <div class="card-back">AB-1, 425</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">Transport Office</div>
+          <div class="card-back">CB, G-19</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">Finance Office</div>
+          <div class="card-back">CB, G-01</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">Alumni Association</div>
+          <div class="card-back">AB-1, 140</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">Student Record Section</div>
+          <div class="card-back">AB-1, 326</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">Estate Office</div>
+          <div class="card-back">AB-1</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">HR Manager</div>
+          <div class="card-back">CB, G-19</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">Academic Research Office</div>
+          <div class="card-back">AB-1, 313</div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Particle Animation Script -->
-  <script>
-    const canvas = document.getElementById("particles");
-    const ctx = canvas.getContext("2d");
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+  <!-- ✅ Footer -->
+  <footer>
+    <p>Developed by Diwakar</p>
+    <div class="social-icons">
+      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="mailto:yourmail@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </footer>
 
-    let particles = [];
-    for (let i = 0; i < 80; i++) {
-      particles.push({
-        x: Math.random() * canvas.width,
-        y: Math.random() * canvas.height,
-        radius: Math.random() * 3 + 1,
-        dx: (Math.random() - 0.5) * 2,
-        dy: (Math.random() - 0.5) * 2
-      });
-    }
-
-    function drawParticles() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      particles.forEach(p => {
-        ctx.beginPath();
-        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-        ctx.fillStyle = "rgba(0,255,255,0.7)";
-        ctx.fill();
-
-        p.x += p.dx;
-        p.y += p.dy;
-
-        if (p.x < 0 || p.x > canvas.width) p.dx *= -1;
-        if (p.y < 0 || p.y > canvas.height) p.dy *= -1;
-      });
-      requestAnimationFrame(drawParticles);
-    }
-    drawParticles();
-
-    window.addEventListener("resize", () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    });
-  </script>
 </body>
 </html>
