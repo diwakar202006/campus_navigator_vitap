@@ -3,21 +3,143 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>research scholar faculty (SCOPE)</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Research Scholar Faculty (SCOPE)</title>
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0f0f1a;
+      color: #f5f5f5;
+      overflow-x: hidden;
+    }
+
+    /* Particle Background */
+    canvas {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: -1;
+    }
+
+    /* Hero Banner */
+    .hero-banner {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 2rem;
+      text-align: center;
+    }
+    .hero-banner h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      text-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
+    }
+    .hero-banner p {
+      font-size: 1.2rem;
+      color: #bbb;
+    }
+
+    /* Navigation */
+    nav.sub-nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 1rem;
+      backdrop-filter: blur(5px);
+    }
+    nav.sub-nav a {
+      color: cyan;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav.sub-nav a:hover {
+      color: white;
+    }
+
+    /* Search bar */
+    #yellow-faculty-search {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 15px;
+      width: 320px;
+      max-width: 90%;
+      border-radius: 20px;
+      border: none;
+      outline: none;
+      font-size: 1rem;
+    }
+
+    /* Faculty container */
+    .yellow-faculty-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    /* Faculty card */
+    .faculty-card {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s, box-shadow 0.3s;
+      height: 220px; /* fixed equal size */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .faculty-card:hover {
+      transform: translateY(-10px) scale(1.05);
+      box-shadow: 0 8px 30px rgba(0, 255, 255, 0.6);
+    }
+    .faculty-card h3 {
+      margin: 0 0 10px;
+      color: cyan;
+    }
+    .faculty-card p {
+      margin: 5px 0;
+    }
+
+    /* Footer */
+    footer.nav-footer {
+      background: #111;
+      text-align: center;
+      padding: 25px;
+      margin-top: 40px;
+    }
+    footer p {
+      margin: 10px 0;
+    }
+    .footer-contact a {
+      color: #f5f5f5;
+      margin: 0 10px;
+      font-size: 1.3rem;
+      transition: color 0.3s, transform 0.3s;
+    }
+    .footer-contact a:hover {
+      color: #00e0ff;
+      transform: scale(1.2);
+    }
+  </style>
 </head>
 <body>
 
   <!-- Particle Background -->
   <canvas id="particles"></canvas>
 
-  <!-- 🔷 Hero Banner -->
+  <!-- Hero Banner -->
   <header class="hero-banner">
     <h1 class="animated-text">Yellow Tag Faculty (SCOPE)</h1>
     <p>Find Faculty Cabins & Office Locations Easily</p>
   </header>
 
-  <!-- 🔗 Sub Navigation (below hero banner) -->
+  <!-- Navigation below hero -->
   <nav class="sub-nav">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -25,23 +147,18 @@
     <a href="faculty.html">Faculty Cabins</a>
   </nav>
 
-  <!-- 🔍 Search Input -->
-  <input
-    type="text"
-    id="yellow-faculty-search"
-    placeholder="Search faculty by name..."
-  />
+  <!-- Search -->
+  <input type="text" id="yellow-faculty-search" placeholder="Search faculty by name..."/>
 
-  <!-- 📌 Faculty Cards Section -->
+  <!-- Faculty Cards Section -->
   <main>
     <section id="yellow-faculty-container" class="yellow-faculty-container">
       <!-- Cards injected by JS -->
     </section>
   </main>
 
-  <!-- ---------------- Footer ---------------- -->
+  <!-- Footer -->
   <footer class="nav-footer">
-    <!-- Sub-navigation in footer -->
     <nav class="sub-nav">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -49,20 +166,12 @@
       <a href="faculty.html">Faculty Cabins</a>
     </nav>
 
-    <!-- Developed by text -->
     <p>Developed by Diwakar</p>
 
-    <!-- Contact Icons -->
     <div class="footer-contact">
-      <a href="#" target="_blank" title="Instagram">
-        <img src="assets/instagram.png" alt="Instagram">
-      </a>
-      <a href="#" target="_blank" title="LinkedIn">
-        <img src="assets/linkedin.png" alt="LinkedIn">
-      </a>
-      <a href="mailto:example@gmail.com" target="_blank" title="Gmail">
-        <img src="assets/gmail.png" alt="Gmail">
-      </a>
+      <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:example@gmail.com" target="_blank" title="Gmail"><i class="fas fa-envelope"></i></a>
     </div>
   </footer>
 
