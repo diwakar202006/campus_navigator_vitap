@@ -4,53 +4,84 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Campus Navigator - Offices</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
     body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: #0f0f1a;
-      color: white;
+      color: #f5f5f5;
       overflow-x: hidden;
     }
 
-    /* ✅ Hero Banner */
-    header.hero-banner {
-      background: url('../images/VIT-AP.jpg') no-repeat center center/cover;
+    /* Hero Banner */
+    .hero-banner {
+      background: url('../images/VIT-AP.jpg') center/cover no-repeat;
       height: 250px;
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       text-align: center;
       position: relative;
     }
 
-    header.hero-banner::after {
-      content: "";
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0,0,0,0.6);
-    }
-
-    header.hero-banner h1 {
-      position: relative;
+    .hero-banner h1 {
       font-size: 2.5rem;
-      color: cyan;
-      text-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
-      z-index: 1;
+      background: rgba(0,0,0,0.6);
+      padding: 15px 30px;
+      border-radius: 10px;
     }
 
-    /* ✅ Offices Grid */
+    /* Navigation below banner */
+    nav {
+      background: rgba(0, 0, 0, 0.85);
+      display: flex;
+      justify-content: center;
+      padding: 12px 30px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #f5f5f5;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #00e0ff;
+    }
+
+    /* Search Bar */
+    .search-container {
+      display: flex;
+      justify-content: center;
+      margin: 20px;
+    }
+
+    .search-container input {
+      width: 320px;
+      padding: 10px 15px;
+      border-radius: 20px;
+      border: none;
+      outline: none;
+      font-size: 1rem;
+    }
+
+    /* Grid of Office Cards */
     .office-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 2rem;
+      gap: 25px;
+      padding: 30px;
     }
 
-    /* ✅ Flip Card */
     .card {
       perspective: 1000px;
     }
@@ -58,9 +89,8 @@
     .card-inner {
       position: relative;
       width: 100%;
-      height: 220px;
-      text-align: center;
-      transition: transform 0.8s;
+      height: 200px;
+      transition: transform 0.6s;
       transform-style: preserve-3d;
     }
 
@@ -73,156 +103,138 @@
       width: 100%;
       height: 100%;
       backface-visibility: hidden;
-      border-radius: 12px;
+      border-radius: 15px;
       display: flex;
-      flex-direction: column;
-      align-items: center;
       justify-content: center;
-      font-size: 1.1rem;
-      padding: 1rem;
-      box-shadow: 0 4px 20px rgba(0,255,255,0.4);
+      align-items: center;
+      padding: 15px;
+      text-align: center;
     }
 
     .card-front {
-      background: rgba(255, 255, 255, 0.08);
-      color: cyan;
-      font-weight: bold;
+      background: linear-gradient(135deg, #1f1f2e, #292942);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.5);
     }
 
     .card-back {
-      background: rgba(0, 255, 255, 0.1);
-      color: white;
+      background: linear-gradient(135deg, #00e0ff, #007bff);
       transform: rotateY(180deg);
+      color: #000;
+      font-weight: bold;
     }
 
-    .card-back small {
-      margin-top: 10px;
-      font-size: 0.9rem;
-      color: #ccc;
-    }
-
-    /* ✅ Footer */
+    /* Footer */
     footer {
-      background: rgba(0, 0, 0, 0.8);
+      background: #111;
       text-align: center;
-      padding: 1.5rem;
-      margin-top: 2rem;
-      color: #ccc;
+      padding: 25px;
+      margin-top: 40px;
     }
 
-    footer .social-icons a {
-      color: cyan;
+    footer p {
+      margin-bottom: 15px;
+    }
+
+    .socials a {
+      color: #f5f5f5;
+      margin: 0 12px;
+      font-size: 1.3rem;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    .socials a:hover {
+      color: #00e0ff;
+      transform: scale(1.2);
+    }
+
+    .footer-links {
+      margin-top: 12px;
+    }
+
+    .footer-links a {
+      color: #aaa;
       margin: 0 10px;
-      font-size: 1.5rem;
-      transition: color 0.3s;
+      text-decoration: none;
+      font-size: 0.9rem;
     }
 
-    footer .social-icons a:hover {
-      color: white;
+    .footer-links a:hover {
+      color: #00e0ff;
     }
   </style>
 </head>
 <body>
 
-  <!-- ✅ Hero Banner -->
+  <!-- Hero Banner -->
   <header class="hero-banner">
     <h1>Campus Offices</h1>
   </header>
 
-  <!-- ✅ Offices Flip Cards -->
-  <main>
-    <section class="office-grid">
-      <div class="card"><div class="card-inner">
-        <div class="card-front">Library</div>
-        <div class="card-back">AB-1, 2nd Floor <small>Provides access to books, journals, and digital resources.</small></div>
-      </div></div>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="faculty.html">Faculty</a></li>
+      <li><a href="yellowtag.html">Yellow Tag</a></li>
+      <li><a href="offices.html">Offices</a></li>
+    </ul>
+  </nav>
 
-      <div class="card"><div class="card-inner">
-        <div class="card-front">SCOPE Dean</div>
-        <div class="card-back">CB, 3rd Floor <small>Head office for School of Computer Science and Engineering.</small></div>
-      </div></div>
+  <!-- Search -->
+  <div class="search-container">
+    <input type="text" id="searchBar" placeholder="Search office...">
+  </div>
 
-      <div class="card"><div class="card-inner">
-        <div class="card-front">Dean Academics</div>
-        <div class="card-back">AB-1, G-36 <small>Oversees academic regulations and curriculum planning.</small></div>
-      </div></div>
+  <!-- Office Grid -->
+  <section class="office-grid" id="officeGrid">
+    <!-- All Offices -->
+    <div class="card"><div class="card-inner"><div class="card-front"><h3>Library</h3></div><div class="card-back"><p>AB-1, 2nd Floor. Central hub for books and digital resources.</p></div></div></div>
+    <div class="card"><div class="card-inner"><div class="card-front"><h3>SCOPE Dean</h3></div><div class="card-back"><p>CB, 3rd Floor. Dean’s office for School of Computer Science.</p></div></div></div>
+    <div class="card"><div class="card-inner"><div class="card-front"><h3>Dean Academics</h3></div><div class="card-back"><p>AB-1, G-36. Oversees academic planning and regulations.</p></div></div></div>
+    <div class="card"><div class="card-inner"><div class="card-front"><h3>CoE Office</h3></div><div class="card-back"><p>AB-1, 229. Controller of Examinations office for exam-related tasks.</p></div></div></div>
+    <div class="card"><div class="card-inner"><div class="card-front"><h3>Engineering Clinics</h3></div><div class="card-back"><p>CB, 210. Practical learning and student innovation hub.</p></div></div></div>
+    <div class="card"><div class="card-inner"><div class="card-front"><h3>IIEC Office</h3></div><div class="card-back"><p>CB, 206. Innovation, Incubation & Entrepreneurship Center.</p></div></div></div>
+    <div class="card"><div class="card-inner"><div class="card-front"><h3>CDC</h3></div><div class="card-back"><p>CB, 312. Career Development Centre for placements and training.</p></div></div></div>
+    <div class="card"><div class="card-inner"><div class="card-front"><h3>Physical Education</h3></div><div class="card-back"><p>AB-1, 425. Sports and physical training office.</p></div></div></div>
+    <div class="card"><div class="card-inner"><div class="card-front"><h3>Transport Office</h3></div><div class="card-back"><p>CB, G-19. Manages campus transport services.</p></div></div></div>
+    <div class="card"><div class="card-inner"><div class="card-front"><h3>Finance Office</h3></div><div class="card-back"><p>CB, G-01. Handles university financial transactions.</p></div></div></div>
+    <div class="card"><div class="card-inner"><div class="card-front"><h3>Alumni Association</h3></div><div class="card-back"><p>AB-1, 140. Connects alumni with current students & events.</p></div></div></div>
+    <div class="card"><div class="card-inner"><div class="card-front"><h3>Student Record Section</h3></div><div class="card-back"><p>AB-1, 326. Maintains student academic records.</p></div></div></div>
+    <div class="card"><div class="card-inner"><div class="card-front"><h3>Estate Office</h3></div><div class="card-back"><p>AB-1. Manages campus infrastructure and facilities.</p></div></div></div>
+    <div class="card"><div class="card-inner"><div class="card-front"><h3>HR Manager</h3></div><div class="card-back"><p>CB, G-19. Human resources and staff administration.</p></div></div></div>
+    <div class="card"><div class="card-inner"><div class="card-front"><h3>Academic Research Office</h3></div><div class="card-back"><p>AB-1, 313. Research support and project facilitation.</p></div></div></div>
+    <div class="card"><div class="card-inner"><div class="card-front"><h3>International Relations Office</h3></div><div class="card-back"><p>AB-1, 214. Manages global collaborations and partnerships.</p></div></div></div>
+  </section>
 
-      <div class="card"><div class="card-inner">
-        <div class="card-front">COE Office</div>
-        <div class="card-back">AB-1, 229 <small>Controller of Examinations, handles exam schedules and results.</small></div>
-      </div></div>
-
-      <div class="card"><div class="card-inner">
-        <div class="card-front">Engineering Clinics</div>
-        <div class="card-back">CB, 210 <small>Supports hands-on projects and interdisciplinary research.</small></div>
-      </div></div>
-
-      <div class="card"><div class="card-inner">
-        <div class="card-front">IIEC Office</div>
-        <div class="card-back">CB, 206 <small>Innovation, Incubation & Entrepreneurship Cell.</small></div>
-      </div></div>
-
-      <div class="card"><div class="card-inner">
-        <div class="card-front">CDC</div>
-        <div class="card-back">CB, 312 <small>Career Development Centre for placements and training.</small></div>
-      </div></div>
-
-      <div class="card"><div class="card-inner">
-        <div class="card-front">Physical Education</div>
-        <div class="card-back">AB-1, 425 <small>Manages sports and physical fitness programs.</small></div>
-      </div></div>
-
-      <div class="card"><div class="card-inner">
-        <div class="card-front">Transport Office</div>
-        <div class="card-back">CB, G-19 <small>Handles bus routes and student/staff transport services.</small></div>
-      </div></div>
-
-      <div class="card"><div class="card-inner">
-        <div class="card-front">Finance Office</div>
-        <div class="card-back">CB, G-01 <small>Responsible for student fees and financial management.</small></div>
-      </div></div>
-
-      <div class="card"><div class="card-inner">
-        <div class="card-front">Alumni Association</div>
-        <div class="card-back">AB-1, 140 <small>Maintains connections with university alumni.</small></div>
-      </div></div>
-
-      <div class="card"><div class="card-inner">
-        <div class="card-front">Student Record Section</div>
-        <div class="card-back">AB-1, 326 <small>Keeps student transcripts and academic records.</small></div>
-      </div></div>
-
-      <div class="card"><div class="card-inner">
-        <div class="card-front">Estate Office</div>
-        <div class="card-back">AB-1 <small>Maintains campus infrastructure and facilities.</small></div>
-      </div></div>
-
-      <div class="card"><div class="card-inner">
-        <div class="card-front">HR Manager</div>
-        <div class="card-back">CB, G-19 <small>Handles recruitment and staff welfare services.</small></div>
-      </div></div>
-
-      <div class="card"><div class="card-inner">
-        <div class="card-front">Academic Research Office</div>
-        <div class="card-back">AB-1, 313 <small>Supports faculty and student research activities.</small></div>
-      </div></div>
-
-      <div class="card"><div class="card-inner">
-        <div class="card-front">International Relations</div>
-        <div class="card-back">AB-1, 214 <small>Facilitates collaborations with foreign universities and student exchange programs.</small></div>
-      </div></div>
-    </section>
-  </main>
-
-  <!-- ✅ Footer -->
+  <!-- Footer -->
   <footer>
     <p>Developed by Diwakar</p>
-    <div class="social-icons">
+    <div class="socials">
       <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
       <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
       <a href="mailto:yourmail@gmail.com"><i class="fas fa-envelope"></i></a>
     </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a> |
+      <a href="faculty.html">Faculty</a> |
+      <a href="yellow_faculty.html">yellow tag faculty Tag</a> |
+      <a href="offices.html">Offices</a>
+    </div>
   </footer>
 
+  <!-- Search JS -->
+  <script>
+    const searchBar = document.getElementById('searchBar');
+    const officeGrid = document.getElementById('officeGrid');
+    const cards = officeGrid.getElementsByClassName('card');
+
+    searchBar.addEventListener('keyup', function(e) {
+      const query = e.target.value.toLowerCase();
+      Array.from(cards).forEach(card => {
+        const text = card.innerText.toLowerCase();
+        card.style.display = text.includes(query) ? '' : 'none';
+      });
+    });
+  </script>
 </body>
 </html>
