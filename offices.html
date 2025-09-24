@@ -1,55 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>University Offices - Campus Navigator</title>
-  <link rel="stylesheet" href="css/style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Navigator - Offices</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+      background: #0f0f1a;
+      overflow-x: hidden;
+    }
+
+    /* 🔵 Particle Background */
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    /* 🔵 Hero Banner */
+    header.hero-banner {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 2rem;
+      text-align: center;
+    }
+    header.hero-banner h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      text-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
+    }
+
+    /* 🔵 Navigation */
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 1rem;
+      backdrop-filter: blur(5px);
+    }
+    nav a {
+      color: cyan;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: white;
+    }
+
+    /* 🔵 Offices Grid */
+    .office-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 2rem;
+    }
+
+    /* 🔵 Flip Card Effect */
+    .office-card {
+      perspective: 1000px;
+    }
+    .card-inner {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      transform-style: preserve-3d;
+      transition: transform 0.8s;
+    }
+    .office-card:hover .card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .card-front, .card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+      backface-visibility: hidden;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Front */
+    .card-front {
+      background: rgba(255, 255, 255, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 1.5rem;
+    }
+    .card-front h3 {
+      margin: 0;
+      color: cyan;
+    }
+
+    /* Back */
+    .card-back {
+      background: rgba(0, 255, 255, 0.1);
+      transform: rotateY(180deg);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      text-align: center;
+    }
+    .card-back p {
+      margin: 5px 0;
+      font-size: 0.95rem;
+      color: #eee;
+    }
+  </style>
 </head>
 <body>
+  <!-- Particle Background -->
+  <canvas id="particles"></canvas>
 
-  <!-- 🔷 Hero Banner (unchanged) -->
+  <!-- Hero Banner -->
   <header class="hero-banner">
-    <h1 class="animated-text">Campus Navigator - VIT-AP</h1>
-    <p>Find Faculty Cabins & Office Locations Easily</p>
+    <h1>Campus Navigator - Offices</h1>
   </header>
 
-  <!-- 🏢 Office Info Section -->
-  <section class="offices-section">
-    <h2 class="section-title">University Offices</h2>
-
-    <div class="office-card fade-slide">
-      <h3>Office of Academic Affairs</h3>
-      <p>Handles curriculum design, exam schedules, and academic regulations across all schools and programs.</p>
-      <p><strong>Director:</strong> Dr. A. Narayana</p>
-    </div>
-
-    <div class="office-card fade-slide delay-1">
-      <h3>Student Welfare Office</h3>
-      <p>Supports student engagement, well-being, counselling, grievance redressal, and club activities.</p>
-      <p><strong>Director:</strong> Dr. N. Praveena</p>
-    </div>
-
-    <div class="office-card fade-slide delay-2">
-      <h3>International Relations Office</h3>
-      <p>Coordinates international collaborations, exchange programs, and overseas internship opportunities.</p>
-      <p><strong>Director:</strong> Prof. John Mathews</p>
-    </div>
-
-    <div class="office-card fade-slide delay-3">
-      <h3>Office of Placement and Training</h3>
-      <p>Facilitates campus recruitment, skill training sessions, mock interviews, and placement drives.</p>
-      <p><strong>Director:</strong> Mr. R. Suresh</p>
-    </div>
-  </section>
-
-  <!-- 🔗 Footer -->
-  <footer class="nav-footer">
+  <!-- Navigation -->
+  <nav>
     <a href="index.html">Home</a>
-    <a href="about.html">about</a>
-    <a href="faculty.html">faculty Cabins</a>
-  </footer>
+    <a href="faculty_cabins.html">Faculty Cabins</a>
+    <a href="yellow_faculty.html">Yellow Tag Faculty</a>
+    <a href="about.html">About</a>
+  </nav>
 
+  <!-- Office Cards -->
+  <main>
+    <section class="office-grid">
+      <div class="office-card">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>Admissions Office</h3>
+          </div>
+          <div class="card-back">
+            <p><strong>Location:</strong> Block A, Room 101</p>
+            <p><strong>Contact:</strong> admissions@vitap.ac.in</p>
+          </div>
+        </div>
+      </div>
+      <div class="office-card">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>Finance Office</h3>
+          </div>
+          <div class="card-back">
+            <p><strong>Location:</strong> Block B, Room 202</p>
+            <p><strong>Contact:</strong> finance@vitap.ac.in</p>
+          </div>
+        </div>
+      </div>
+      <div class="office-card">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>Examination Office</h3>
+          </div>
+          <div class="card-back">
+            <p><strong>Location:</strong> Block D, Room 305</p>
+            <p><strong>Contact:</strong> exams@vitap.ac.in</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Particle Animation Script -->
+  <script>
+    const canvas = document.getElementById("particles");
+    const ctx = canvas.getContext("2d");
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    let particles = [];
+    for (let i = 0; i < 80; i++) {
+      particles.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        radius: Math.random() * 3 + 1,
+        dx: (Math.random() - 0.5) * 2,
+        dy: (Math.random() - 0.5) * 2
+      });
+    }
+
+    function drawParticles() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach(p => {
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+        ctx.fillStyle = "rgba(0,255,255,0.7)";
+        ctx.fill();
+
+        p.x += p.dx;
+        p.y += p.dy;
+
+        if (p.x < 0 || p.x > canvas.width) p.dx *= -1;
+        if (p.y < 0 || p.y > canvas.height) p.dy *= -1;
+      });
+      requestAnimationFrame(drawParticles);
+    }
+    drawParticles();
+
+    window.addEventListener("resize", () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    });
+  </script>
 </body>
 </html>
-s
