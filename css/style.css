@@ -123,11 +123,12 @@ canvas#particles {
 /* ---------------- 🔶 Yellow Tag Faculty Section ---------------- */
 .yellow-faculty-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(autofit,minmax(250px, 1fr));
     gap: 20px;
     padding: 30px;
     justify-items: center;
     animation: fadeIn 1s ease-in-out;
+    align-items:strech;
 }
 .yellow-faculty-card {
     background: #1a1a2e;
@@ -144,10 +145,11 @@ canvas#particles {
     overflow: hidden;
 
     /* 🔹 Fixed height */
-    height: 200px;
+    min-height: 200px;
+    max-width:280px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
 }
 .yellow-faculty-card::before {
     content: "";
