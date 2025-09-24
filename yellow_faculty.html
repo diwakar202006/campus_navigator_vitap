@@ -27,9 +27,24 @@
 
     /* Hero Banner */
     .hero-banner {
-      background: rgba(0, 0, 0, 0.6);
+      position: relative;
+      background: url('images/VIT-AP.jpg') no-repeat center center;
+      background-size: cover;
       padding: 2rem;
       text-align: center;
+      color: #f5f5f5;
+    }
+    .hero-banner::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.6);
+      z-index: 0;
+    }
+    .hero-banner h1,
+    .hero-banner p {
+      position: relative;
+      z-index: 1;
     }
     .hero-banner h1 {
       font-size: 2.5rem;
@@ -93,6 +108,8 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      opacity: 0;
+      animation: fadeInUp 0.6s forwards;
     }
     .faculty-card:hover {
       transform: translateY(-10px) scale(1.05);
@@ -104,6 +121,20 @@
     }
     .faculty-card p {
       margin: 5px 0;
+    }
+
+    /* Highlighted search text */
+    .highlight {
+      background-color: cyan;
+      color: #000;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+
+    /* Fade-in animation */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     /* Footer */
@@ -177,6 +208,81 @@
 
   <!-- Particles.js library -->
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-  <script src="js/yellow_faculty.js"></script>
+
+  <!-- JS for Faculty Cards and Search -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      let facultyData = [];
+      const container = document.getElementById("yellow-faculty-container");
+      const searchInput = document.getElementById("yellow-faculty-search");
+
+      function highlightText(text, searchTerm) {
+        if (!searchTerm) return text;
+        const regex = new RegExp(`(${searchTerm})`, "gi");
+        return text.replace(regex, `<span class="highlight">$1</span>`);
+      }
+
+      function renderCards(data, searchTerm = "") {
+        container.innerHTML = "";
+        data.forEach((faculty, index) => {
+          const card = document.createElement("div");
+          card.classList.add("faculty-card");
+          card.style.animationDelay = `${index * 0.2}s`;
+
+          card.innerHTML = `
+            <h3>${highlightText(faculty.name, searchTerm)}</h3>
+            <p><strong>Roll:</strong> ${faculty.roll}</p>
+            <p><strong>Employee ID:</strong> ${faculty.id}</p>
+            <p><strong>Cabin:</strong> ${faculty.cabin}</p>
+          `;
+          container.appendChild(card);
+        });
+      }
+
+      // Initialize particle background
+      if (window.particlesJS) {
+        particlesJS("particles", {
+          particles: {
+            number: { value: 80, density: { enable: true, value_area: 800 } },
+            color: { value: "#00c6ff" },
+            shape: { type: "circle" },
+            opacity: { value: 0.5, anim: { enable: true, speed: 1, opacity_min: 0.1 } },
+            size: { value: 3, random: true },
+            line_linked: { enable: true, distance: 150, color: "#00c6ff", opacity: 0.4, width: 1 },
+            move: { enable: true, speed: 2, direction: "none", random: false, straight: false, out_mode: "out", bounce: false }
+          },
+          interactivity: {
+            detect_on: "canvas",
+            events: {
+              onhover: { enable: true, mode: "grab" },
+              onclick: { enable: true, mode: "push" },
+              resize: true
+            },
+            modes: {
+              grab: { distance: 140, line_linked: { opacity: 0.7 } },
+              push: { particles_nb: 4 }
+            }
+          },
+          retina_detect: true
+        });
+      }
+
+      // Fetch faculty data
+      fetch("data/faculty_yellow_tag.json")
+        .then(response => response.json())
+        .then(data => {
+          facultyData = data;
+          renderCards(facultyData);
+        })
+        .catch(error => console.error("Error loading JSON:", error));
+
+      // Search functionality
+      searchInput.addEventListener("input", () => {
+        const searchTerm = searchInput.value.toLowerCase();
+        const filtered = facultyData.filter(f => f.name.toLowerCase().includes(searchTerm));
+        renderCards(filtered, searchTerm);
+      });
+    });
+  </script>
 </body>
 </html>
