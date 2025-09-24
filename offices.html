@@ -58,7 +58,7 @@
     .card-inner {
       position: relative;
       width: 100%;
-      height: 200px;
+      height: 220px;
       text-align: center;
       transition: transform 0.8s;
       transform-style: preserve-3d;
@@ -75,9 +75,10 @@
       backface-visibility: hidden;
       border-radius: 12px;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       padding: 1rem;
       box-shadow: 0 4px 20px rgba(0,255,255,0.4);
     }
@@ -85,12 +86,19 @@
     .card-front {
       background: rgba(255, 255, 255, 0.08);
       color: cyan;
+      font-weight: bold;
     }
 
     .card-back {
       background: rgba(0, 255, 255, 0.1);
       color: white;
       transform: rotateY(180deg);
+    }
+
+    .card-back small {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: #ccc;
     }
 
     /* ✅ Footer */
@@ -124,110 +132,85 @@
   <!-- ✅ Offices Flip Cards -->
   <main>
     <section class="office-grid">
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-front">Library</div>
-          <div class="card-back">AB-1, 2nd Floor</div>
-        </div>
-      </div>
+      <div class="card"><div class="card-inner">
+        <div class="card-front">Library</div>
+        <div class="card-back">AB-1, 2nd Floor <small>Provides access to books, journals, and digital resources.</small></div>
+      </div></div>
 
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-front">SCOPE Dean</div>
-          <div class="card-back">CB, 3rd Floor</div>
-        </div>
-      </div>
+      <div class="card"><div class="card-inner">
+        <div class="card-front">SCOPE Dean</div>
+        <div class="card-back">CB, 3rd Floor <small>Head office for School of Computer Science and Engineering.</small></div>
+      </div></div>
 
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-front">Dean Academics</div>
-          <div class="card-back">AB-1, G-36</div>
-        </div>
-      </div>
+      <div class="card"><div class="card-inner">
+        <div class="card-front">Dean Academics</div>
+        <div class="card-back">AB-1, G-36 <small>Oversees academic regulations and curriculum planning.</small></div>
+      </div></div>
 
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-front">COE Office</div>
-          <div class="card-back">AB-1, 229</div>
-        </div>
-      </div>
+      <div class="card"><div class="card-inner">
+        <div class="card-front">COE Office</div>
+        <div class="card-back">AB-1, 229 <small>Controller of Examinations, handles exam schedules and results.</small></div>
+      </div></div>
 
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-front">Engineering Clinics</div>
-          <div class="card-back">CB, 210</div>
-        </div>
-      </div>
+      <div class="card"><div class="card-inner">
+        <div class="card-front">Engineering Clinics</div>
+        <div class="card-back">CB, 210 <small>Supports hands-on projects and interdisciplinary research.</small></div>
+      </div></div>
 
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-front">IIEC Office</div>
-          <div class="card-back">CB, 206</div>
-        </div>
-      </div>
+      <div class="card"><div class="card-inner">
+        <div class="card-front">IIEC Office</div>
+        <div class="card-back">CB, 206 <small>Innovation, Incubation & Entrepreneurship Cell.</small></div>
+      </div></div>
 
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-front">CDC</div>
-          <div class="card-back">CB, 312</div>
-        </div>
-      </div>
+      <div class="card"><div class="card-inner">
+        <div class="card-front">CDC</div>
+        <div class="card-back">CB, 312 <small>Career Development Centre for placements and training.</small></div>
+      </div></div>
 
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-front">Physical Education</div>
-          <div class="card-back">AB-1, 425</div>
-        </div>
-      </div>
+      <div class="card"><div class="card-inner">
+        <div class="card-front">Physical Education</div>
+        <div class="card-back">AB-1, 425 <small>Manages sports and physical fitness programs.</small></div>
+      </div></div>
 
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-front">Transport Office</div>
-          <div class="card-back">CB, G-19</div>
-        </div>
-      </div>
+      <div class="card"><div class="card-inner">
+        <div class="card-front">Transport Office</div>
+        <div class="card-back">CB, G-19 <small>Handles bus routes and student/staff transport services.</small></div>
+      </div></div>
 
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-front">Finance Office</div>
-          <div class="card-back">CB, G-01</div>
-        </div>
-      </div>
+      <div class="card"><div class="card-inner">
+        <div class="card-front">Finance Office</div>
+        <div class="card-back">CB, G-01 <small>Responsible for student fees and financial management.</small></div>
+      </div></div>
 
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-front">Alumni Association</div>
-          <div class="card-back">AB-1, 140</div>
-        </div>
-      </div>
+      <div class="card"><div class="card-inner">
+        <div class="card-front">Alumni Association</div>
+        <div class="card-back">AB-1, 140 <small>Maintains connections with university alumni.</small></div>
+      </div></div>
 
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-front">Student Record Section</div>
-          <div class="card-back">AB-1, 326</div>
-        </div>
-      </div>
+      <div class="card"><div class="card-inner">
+        <div class="card-front">Student Record Section</div>
+        <div class="card-back">AB-1, 326 <small>Keeps student transcripts and academic records.</small></div>
+      </div></div>
 
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-front">Estate Office</div>
-          <div class="card-back">AB-1</div>
-        </div>
-      </div>
+      <div class="card"><div class="card-inner">
+        <div class="card-front">Estate Office</div>
+        <div class="card-back">AB-1 <small>Maintains campus infrastructure and facilities.</small></div>
+      </div></div>
 
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-front">HR Manager</div>
-          <div class="card-back">CB, G-19</div>
-        </div>
-      </div>
+      <div class="card"><div class="card-inner">
+        <div class="card-front">HR Manager</div>
+        <div class="card-back">CB, G-19 <small>Handles recruitment and staff welfare services.</small></div>
+      </div></div>
 
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-front">Academic Research Office</div>
-          <div class="card-back">AB-1, 313</div>
-        </div>
-      </div>
+      <div class="card"><div class="card-inner">
+        <div class="card-front">Academic Research Office</div>
+        <div class="card-back">AB-1, 313 <small>Supports faculty and student research activities.</small></div>
+      </div></div>
+
+      <div class="card"><div class="card-inner">
+        <div class="card-front">International Relations</div>
+        <div class="card-back">AB-1, 214 <small>Facilitates collaborations with foreign universities and student exchange programs.</small></div>
+      </div></div>
     </section>
   </main>
 
