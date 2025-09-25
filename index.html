@@ -1,26 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campus Navigator - VIT-AP</title>
-    <link rel="stylesheet" href="css/style.css"> <!-- Main site styles -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Navigator – VIT-AP</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0f0f1a;
+      color: #f5f5f5;
+      overflow-x: hidden;
+    }
+
+    /* Hero Banner */
+    .hero-banner {
+      background: rgba(0, 0, 0, 0.7) url('images/VIT-AP.jpg') center/cover no-repeat;
+      padding: 4rem 2rem;
+      text-align: center;
+      color: #fff;
+      text-shadow: 0 0 20px rgba(0,255,255,0.7);
+    }
+    .hero-banner h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    .hero-banner p {
+      font-size: 1.3rem;
+      color: #ccc;
+    }
+
+    /* Navigation */
+    nav.sub-nav {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 1rem;
+      backdrop-filter: blur(5px);
+    }
+    nav.sub-nav a {
+      color: cyan;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: color 0.3s, transform 0.3s;
+    }
+    nav.sub-nav a:hover {
+      color: white;
+      transform: scale(1.1);
+    }
+
+    /* Disclaimer */
+    .disclaimer {
+      background: rgba(255, 255, 0, 0.1);
+      border: 1px solid #ff0;
+      border-radius: 10px;
+      margin: 20px auto;
+      max-width: 900px;
+      padding: 15px 20px;
+      text-align: center;
+      font-size: 1rem;
+      color: #ffeb3b;
+    }
+
+    /* Intro Section */
+    .intro {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+      text-align: center;
+      line-height: 1.6;
+    }
+    .intro h2 {
+      font-size: 2rem;
+      color: cyan;
+      margin-bottom: 15px;
+      text-shadow: 0 0 15px rgba(0,255,255,0.7);
+    }
+
+    /* Campus Blocks Section */
+    .campus-blocks {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .campus-blocks h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: cyan;
+      text-shadow: 0 0 15px rgba(0,255,255,0.7);
+    }
+    .blocks-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      justify-items: center;
+    }
+    .block-card {
+      background: rgba(255,255,255,0.05);
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+      transition: transform 0.3s, box-shadow 0.3s;
+      max-width: 300px;
+    }
+    .block-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .block-card h3 {
+      margin: 15px 0 5px;
+      color: #00e0ff;
+    }
+    .block-card p {
+      padding: 0 15px 20px;
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+    .block-card:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 8px 30px rgba(0,255,255,0.6);
+    }
+
+    /* Footer */
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 25px;
+      margin-top: 40px;
+    }
+    footer p {
+      margin: 10px 0;
+      color: #bbb;
+    }
+    .footer-contact a {
+      color: #f5f5f5;
+      margin: 0 10px;
+      font-size: 1.3rem;
+      transition: color 0.3s, transform 0.3s;
+    }
+    .footer-contact a:hover {
+      color: #00e0ff;
+      transform: scale(1.2);
+    }
+  </style>
 </head>
 <body>
 
-    <!-- 🔷 Background Banner -->
-    <header class="hero-banner">
-        <h1 class="animated-text">Campus Navigator - VIT-AP</h1>
-        <p>Find Faculty Cabins & Office Locations Easily</p>
-    </header>
+  <!-- Hero Banner -->
+  <header class="hero-banner">
+    <h1>Campus Navigator – VIT-AP</h1>
+    <p>Find faculty cabins, offices & campus details easily</p>
+  </header>
 
-    <!-- 🔗 Footer Navigation -->
-    <footer class="nav-footer">
-        <a href="offices.html">Offices</a>
-        <a href="faculty.html">Faculty Cabins</a>
-        <a href="yellow_faculty.html">research scholar Faculty</a>
-    </footer>
+  <!-- Navigation -->
+  <nav class="sub-nav">
+    <a href="offices.html">Offices</a>
+    <a href="faculty.html">Faculty Cabins</a>
+    <a href="yellow_faculty.html">Research Scholar Faculty</a>
+  </nav>
 
-    <script src="js/script.js"></script>
+  <!-- Disclaimer -->
+  <div class="disclaimer">
+    ⚠️ This is an <strong>unofficial page</strong> created by a fellow VIT-AP student to help peers.  
+    It is not affiliated with or maintained by VIT-AP University.
+  </div>
+
+  <!-- Intro -->
+  <section class="intro">
+    <h2>About the Project</h2>
+    <p>
+      Campus Navigator is a student-built platform designed to make it easier for VIT-AP students to 
+      find faculty cabins, department offices, and important blocks across the campus. Instead of 
+      roaming around, you can search and locate details in seconds.  
+    </p>
+  </section>
+
+  <!-- Campus Blocks -->
+  <section class="campus-blocks">
+    <h2>Campus Blocks</h2>
+    <div class="blocks-container">
+      
+      <!-- Block 1 -->
+      <div class="block-card">
+        <img src="images/AB1.jpg" alt="Academic Block 1">
+        <h3>Academic Block - 1</h3>
+        <p>Area: 179090.52 Sq.Ft.<br>Sarvepalli Radhakrishnan Block</p>
+      </div>
+
+      <!-- Block 2 -->
+      <div class="block-card">
+        <img src="images/AB2.jpg" alt="Academic Block 2">
+        <h3>Academic Block - 2</h3>
+        <p><!-- Add description later --></p>
+      </div>
+
+      <!-- Block 3 -->
+      <div class="block-card">
+        <img src="images/AB3.jpg" alt="Academic Block 3">
+        <h3>Academic Block - 3</h3>
+        <p><!-- Add description later --></p>
+      </div>
+
+      <!-- Central Block -->
+      <div class="block-card">
+        <img src="images/CentralBlock.jpg" alt="Central Block">
+        <h3>Central Block</h3>
+        <p><!-- Add description later --></p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Developed by Diwakar </p>
+    <div class="footer-contact">
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:example@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+    </div>
+  </footer>
+
 </body>
 </html>
