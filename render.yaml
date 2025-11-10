@@ -1,0 +1,22 @@
+services:
+  # 🟣 BACKEND (Node + Express)
+  - type: web
+    name: campus-navigator-backend
+    env: node
+    plan: free
+    region: oregon
+    branch: main
+    root: backend
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && npm start
+
+  # 🟢 FRONTEND (Static site)
+  - type: web
+    name: campus-navigator-frontend
+    env: static
+    plan: free
+    region: oregon
+    branch: main
+    root: .
+    buildCommand: ""
+    staticPublishPath: .
