@@ -1,10 +1,9 @@
 services:
-  # 🟣 BACKEND
+  # BACKEND (Node)
   - type: web
     name: campus-navigator-backend
     env: node
     plan: free
-    region: oregon
     branch: main
     buildCommand: cd backend && npm install
     startCommand: cd backend && npm start
@@ -14,12 +13,11 @@ services:
       - key: NODE_ENV
         value: production
 
-  # 🟢 FRONTEND
+  # FRONTEND (Static)
   - type: web
     name: campus-navigator-frontend
     env: static
     plan: free
-    region: oregon
     branch: main
     buildCommand: ""
     staticPublishPath: .
