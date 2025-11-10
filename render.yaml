@@ -1,5 +1,5 @@
 services:
-  # 🟣 BACKEND (Node + Express)
+  # BACKEND (Node)
   - type: web
     name: campus-navigator-backend
     env: node
@@ -7,10 +7,10 @@ services:
     region: oregon
     branch: main
     root: backend
-    buildCommand: cd backend && npm install
-    startCommand: cd backend && npm start
+    buildCommand: npm install
+    startCommand: npm start
 
-  # 🟢 FRONTEND (Static site)
+  # FRONTEND (static)
   - type: web
     name: campus-navigator-frontend
     env: static
