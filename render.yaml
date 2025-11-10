@@ -1,5 +1,5 @@
 services:
-  # BACKEND (Node)
+  # 🟣 BACKEND
   - type: web
     name: campus-navigator-backend
     env: node
@@ -10,7 +10,7 @@ services:
     buildCommand: npm install
     startCommand: npm start
 
-  # FRONTEND (static)
+  # 🟢 FRONTEND
   - type: web
     name: campus-navigator-frontend
     env: static
