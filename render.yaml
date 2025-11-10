@@ -1,9 +1,9 @@
 services:
-  # BACKEND (Node)
+  # 🟣 BACKEND (Node.js + MongoDB)
   - type: web
     name: campus-navigator-backend
     env: node
-    plan: free
+    region: oregon          # ✅ optional but allowed
     branch: main
     buildCommand: cd backend && npm install
     startCommand: cd backend && npm start
@@ -13,11 +13,10 @@ services:
       - key: NODE_ENV
         value: production
 
-  # FRONTEND (Static)
+  # 🟢 FRONTEND (Static Site)
   - type: web
     name: campus-navigator-frontend
     env: static
-    plan: free
     branch: main
     buildCommand: ""
     staticPublishPath: .
