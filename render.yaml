@@ -6,9 +6,13 @@ services:
     plan: free
     region: oregon
     branch: main
-    root: backend
-    buildCommand: npm install
-    startCommand: npm start
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && npm start
+    envVars:
+      - key: MONGODB_URI
+        value: mongodb+srv://diwakargunasekhar_db_user:Enter%40123@cluster0.uwfvyzn.mongodb.net/campus_navigator?retryWrites=true&w=majority
+      - key: NODE_ENV
+        value: production
 
   # 🟢 FRONTEND
   - type: web
@@ -17,6 +21,5 @@ services:
     plan: free
     region: oregon
     branch: main
-    root: .
     buildCommand: ""
     staticPublishPath: .
